@@ -1,27 +1,26 @@
 <!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>二部門盤後儀表板</title>
 <style>body{font-family:-apple-system,"Noto Sans TC",sans-serif;margin:12px;background:#0f1115;color:#e6e6e6}h1{font-size:18px}h2{font-size:15px;margin-top:22px}table{border-collapse:collapse;font-size:13px}td,th{border:1px solid #333;padding:4px 6px;text-align:center}th{background:#1c1f26}.l{font-size:20px}.pos{color:#5fd07a}.neg{color:#ff6b6b}.note{font-size:12px;color:#999}.wrap{overflow-x:auto}</style></head><body>
-<h1>二部門盤後儀表板</h1><div class="note">更新 2026-09-30 20:20 台北｜只顯示、不自動動作｜交易日以 ET 18:00 切換</div><div class="note" style="margin:6px 0 10px"><a href="index.html" style="color:#4ea1ff">盤後儀表板</a>｜<a href="v33_top3.html" style="color:#4ea1ff">V3.3前三策略定稿</a></div>
+<h1>二部門盤後儀表板</h1><div class="note">更新 2026-09-30 20:55 台北｜只顯示、不自動動作｜交易日以 ET 18:00 切換</div><div class="note" style="margin:6px 0 10px"><a href="index.html" style="color:#4ea1ff">盤後儀表板</a>｜<a href="v33_top3.html" style="color:#4ea1ff">V3.3前三策略定稿</a></div>
+<h2>策略槽位</h2><div class="note" style="font-size:14px;color:#e6e6e6;margin-bottom:6px">策略槽位：策略1 FOTT.2 紙單｜策略2 BigA 實單｜策略3 TOTT.1 實單</div>
+<div class="wrap"><table><tr><th>槽位</th><th>策略</th><th>模式</th><th>狀態</th></tr><tr><th>策略1</th><td>FOTT.2</td><td>紙單</td><td>等待首筆 webhook</td></tr><tr><th>策略2</th><td>BigA</td><td>實單</td><td>自 09-28 起</td></tr><tr><th>策略3</th><td>TOTT.1</td><td>實單</td><td>等待首筆 webhook</td></tr><tr style="color:#888"><th>歷史</th><td>K01</td><td>實單</td><td>已停用（09-28～09-30）</td></tr><tr style="color:#888"><th>歷史</th><td>TT.3</td><td>紙單</td><td>已停用（無成交紀錄）</td></tr></table></div>
+<div class="note">上線日不固定：以 MC2 回傳該策略第一筆 webhook 資料的交易日為準，未有資料前顯示「等待首筆 webhook」。紙單損益用 sim_pnl_usd。<br>TTF.1：暫無槽位，待 Charles 決定；OOS 基準已備妥</div>
 <h2>每日燈號變化</h2><div class="wrap"><table><tr><th>策略</th><th>09-28</th><th>09-29</th><th>09-30</th></tr>
-<h2>MC2 策略換手時間軸</h2><div class="wrap"><table><tr><th>槽位</th><th>目前</th><th>順序</th></tr><tr><th>實盤 槽1</th><td>K01</td><td>K01 → TOTT.1（10-01 起）</td></tr><tr><th>實盤 槽2</th><td>BigA</td><td>BigA → FOTT.2（10-06 起）</td></tr><tr><th>紙上 槽</th><td>TT.3</td><td>TT.3 → FOTT.2（10-01 起） → TTF.1（10-06 起）</td></tr></table></div>
-<div class="note">⏳ 10-01（預計，未確定） 里程碑①：TOTT.1 回放驗收、GM 簽收後上實盤（預計 9/30 晚）<br>⏳ 10-05（預計，未確定） 里程碑②：TOTT.1 滿一週，實際成交 vs 回放，Charles 決定（預計下週一）<br>⏳ 10-06（預計，未確定） 里程碑③：FOTT.2 回放驗收，換掉 BigA（預計下週二）<br>日期依驗收完成日而定；同一時間只有一支新策略進實盤。新策略在 MC2 回傳 webhook 資料後自動出現；尚無 tick OOS 基準者燈號為 ⚪。</div>
-<tr><th>K01</th><td title="近60趟&gt;0🟢"><div class="l">🟢</div><div class="pos">+4,818</div></td><td title="近60趟&gt;0🟢"><div class="l">🟢</div><div class="pos">+1,620</div></td><td title="近60趟&gt;0🟡"><div class="l">🟡</div><div class="neg">-5,259</div></td></tr>
-<tr><th>TOTT.1</th><td>·</td><td>·</td><td>·</td></tr>
-<tr><th>BigA</th><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-760</div></td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-648</div></td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-1,173</div></td></tr>
 <tr><th>FOTT.2</th><td>·</td><td>·</td><td>·</td></tr>
-<tr><th>TT.3</th><td>·</td><td>·</td><td>·</td></tr>
-<tr><th>TTF.1</th><td>·</td><td>·</td><td>·</td></tr>
+<tr><th>BigA</th><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-760</div></td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-648</div></td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-499</div></td></tr>
+<tr><th>TOTT.1</th><td>·</td><td>·</td><td>·</td></tr>
+<tr><th>K01<div class="note">已停用</div></th><td title="近60趟&gt;0🟢"><div class="l">🟢</div><div class="pos">+4,818</div></td><td title="近60趟&gt;0🟢"><div class="l">🟢</div><div class="pos">+1,620</div></td><td title="近60趟&gt;0🟠"><div class="l">🟠</div><div class="neg">-11,165</div></td></tr>
+<tr><th>TT.3<div class="note">已停用</div></th><td>·</td><td>·</td><td>·</td></tr>
 </table></div><div class="note">格內：燈號＋當日損益 USD。燈號取各子項最差者；對照各自 tick OOS 回測分佈（綠 ≥p10、黃 p5–p10、橘 p1–p5、紅 &lt;p1）。⚪＝樣本不足（未滿 20 日/30 趟）。K01 回測本身為負，改用「近60趟期望 &gt;0」。</div>
 <h2>最新數值</h2><div class="wrap"><table><tr><th>策略</th><th>燈號</th><th>天/趟</th><th>累計淨</th><th>20日SR</th><th>60日SR</th><th>近30趟</th><th>近60趟</th><th>回撤/MC95</th><th>實/模比<br>(假設40%)</th><th>滑價/趟</th></tr>
-<tr><th>K01</th><td class="l">🟡</td><td>3/192</td><td class="pos">+1,179</td><td>— </td><td>— </td><td>-148 </td><td>-76 🟡</td><td>5,259 (1%)</td><td>24%</td><td>19</td></tr>
-<tr><th>TOTT.1</th><td colspan="10">尚無成交（紙單上線後自動出現）</td></tr>
-<tr><th>BigA</th><td class="l">⚪</td><td>3/27</td><td class="neg">-2,581</td><td>— ⚪</td><td>— ⚪</td><td>— ⚪</td><td>— ⚪</td><td>1,821 (5%)</td><td>—</td><td>48</td></tr>
-<tr><th>FOTT.2</th><td colspan="10">尚無成交（紙單上線後自動出現）</td></tr>
-<tr><th>TT.3</th><td colspan="10">尚無成交（紙單上線後自動出現）</td></tr>
-<tr><th>TTF.1</th><td colspan="10">尚無成交（紙單上線後自動出現）</td></tr>
-</table></div><div class="note">回測中位參考：K01 近30趟 +4、20日SR -1.76；BigA 近30趟 +10、20日SR 1.01；TT.3 近30趟 +422、20日SR 2.47。滑價以每筆 slippage_ticks×$5 加總，正值＝對實單不利。</div>
-<h2>累計實單損益</h2><svg viewBox="0 0 640 180" style="width:100%;max-width:640px;background:#161a21">
-<line x1="30" x2="620" y1="122.1" y2="122.1" stroke="#555" stroke-dasharray="3"/>
-<polyline fill="none" stroke="#888" stroke-width="2" points="30.0,41.9 325.0,15.0 620.0,102.5"/><text x="35" y="14" fill="#888" font-size="12">K01</text>
-<polyline fill="none" stroke="#ffb84e" stroke-width="2" points="30.0,134.7 325.0,145.5 620.0,165.0"/><text x="115" y="14" fill="#ffb84e" font-size="12">BigA</text>
-<text x="2" y="19" fill="#888" font-size="10">6,438</text><text x="2" y="165" fill="#888" font-size="10">-2,581</text></svg>
+<tr><th>FOTT.2</th><td colspan="10">等待首筆 webhook</td></tr>
+<tr><th>BigA</th><td class="l">⚪</td><td>3/29</td><td class="neg">-1,907</td><td>— ⚪</td><td>— ⚪</td><td>— ⚪</td><td>— ⚪</td><td>1,147 (3%)</td><td>—</td><td>40</td></tr>
+<tr><th>TOTT.1</th><td colspan="10">等待首筆 webhook</td></tr>
+<tr><th>K01<div class="note">已停用</div></th><td class="l">🟠</td><td>3/194</td><td class="neg">-4,727</td><td>— </td><td>— </td><td>-354 </td><td>-166 🟠</td><td>11,165 (3%)</td><td>—</td><td>19</td></tr>
+<tr><th>TT.3<div class="note">已停用</div></th><td colspan="10">無成交紀錄（已停用）</td></tr>
+</table></div><div class="note">回測中位參考：FOTT.2 近30趟 +176、20日SR 3.23；BigA 近30趟 +10、20日SR 1.01；TOTT.1 近30趟 +556、20日SR 2.34；K01 近30趟 +4、20日SR -1.76；TT.3 近30趟 +422、20日SR 2.47。滑價以每筆 slippage_ticks×$5 加總，正值＝對實單不利。</div>
+<h2>累計損益（紙單以模擬損益計）</h2><svg viewBox="0 0 640 180" style="width:100%;max-width:640px;background:#161a21">
+<line x1="30" x2="620" y1="101.5" y2="101.5" stroke="#555" stroke-dasharray="3"/>
+<polyline fill="none" stroke="#ffb84e" stroke-width="2" points="30.0,111.7 325.0,120.4 620.0,127.1"/><text x="35" y="14" fill="#ffb84e" font-size="12">BigA</text>
+<polyline fill="none" stroke="#888" stroke-width="2" points="30.0,36.8 325.0,15.0 620.0,165.0"/><text x="115" y="14" fill="#888" font-size="12">K01</text>
+<text x="2" y="19" fill="#888" font-size="10">6,438</text><text x="2" y="165" fill="#888" font-size="10">-4,727</text></svg>
 <div class="note">HMM 市場狀態：尚未接入（僅參考欄位，規劃中）。</div></body></html>
