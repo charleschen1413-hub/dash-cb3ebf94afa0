@@ -1,41 +1,44 @@
 <!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>二部門盤後儀表板</title>
 <style>body{font-family:-apple-system,"Noto Sans TC",sans-serif;margin:12px;background:#0f1115;color:#e6e6e6}h1{font-size:18px}h2{font-size:15px;margin-top:22px}table{border-collapse:collapse;font-size:13px}td,th{border:1px solid #333;padding:4px 6px;text-align:center}th{background:#1c1f26}.l{font-size:20px}.pos{color:#5fd07a}.neg{color:#ff6b6b}.note{font-size:12px;color:#999}.wrap{overflow-x:auto}</style></head><body>
-<h1>二部門盤後儀表板</h1><div class="note">更新 2026-10-01 09:40 台北｜只顯示、不自動動作｜交易日以 ET 18:00 切換</div><div class="note" style="margin:6px 0 10px"><a href="index.html" style="color:#4ea1ff">盤後儀表板</a>｜<a href="v33_top3.html" style="color:#4ea1ff">V3.3前三策略定稿</a></div>
+<h1>二部門盤後儀表板</h1><div class="note">更新 2026-10-01 12:46 台北｜只顯示、不自動動作｜交易日以 ET 18:00 切換</div><div class="note" style="margin:6px 0 10px"><a href="index.html" style="color:#4ea1ff">盤後儀表板</a>｜<a href="v33_top3.html" style="color:#4ea1ff">V3.3前三策略定稿</a></div>
 <h2>策略槽位</h2><div class="note" style="font-size:14px;color:#e6e6e6;margin-bottom:6px">策略槽位：策略1 TTF.1 紙單｜策略2 FOTT.2 實單｜策略3 TOTT.1 實單</div>
 <div class="wrap"><table><tr><th>槽位</th><th>策略</th><th>模式</th><th>狀態</th></tr><tr><th>策略1</th><td>TTF.1</td><td>紙單</td><td>等待首筆 webhook</td></tr><tr><th>策略2</th><td>FOTT.2</td><td>實單</td><td>自 09-30 起</td></tr><tr><th>策略3</th><td>TOTT.1</td><td>實單</td><td>等待首筆 webhook</td></tr><tr style="color:#888"><th>歷史</th><td>K01</td><td>實單</td><td>已停用（09-28～09-30）</td></tr><tr style="color:#888"><th>歷史</th><td>BigA</td><td>實單</td><td>已停用（09-28～09-30）</td></tr><tr style="color:#888"><th>歷史</th><td>TT.3</td><td>紙單</td><td>已停用（無成交紀錄）</td></tr></table></div>
 <div class="note">上線日不固定：以 MC2 回傳該策略第一筆 webhook 資料的交易日為準，未有資料前顯示「等待首筆 webhook」。紙單損益用 sim_pnl_usd（依每列 trade_mode）。新策略下單延遲門檻 2 秒；燈號基準為 2 秒延遲版 tick OOS。已停用策略只保留歷史、不列燈號警示。</div>
-<h3 style="font-size:14px;margin:14px 0 6px">紙策略頁</h3><div class="wrap"><table><tr><th>頁面</th><th>策略</th><th>模式</th><th>狀態</th><th>燈號基準</th></tr><tr><th>p策略一</th><td>BigA</td><td>紙單</td><td>等待首筆 webhook</td><td style="text-align:left">BigA tick OOS（8 秒延遲）；百分位燈號</td></tr><tr><th>p策略2</th><td>SecBtoB.8</td><td>紙單</td><td>等待首筆 webhook</td><td style="text-align:left">⚪ tick OOS（含 C4/C5、2 秒延遲）全段 15,563 筆，淨利 −7,024，MDD 110,664，六段 4 段賺；回測近乎持平，無逐日序列故不算百分位燈號</td></tr><tr><th>p策略3</th><td>K01</td><td>紙單</td><td>等待首筆 webhook</td><td style="text-align:left">K01 tick OOS（2 秒延遲）；絕對基準：近60趟期望 &gt;0</td></tr></table></div>
+<h3 style="font-size:14px;margin:14px 0 6px">紙策略頁</h3><div class="wrap"><table><tr><th>頁面</th><th>策略</th><th>模式</th><th>狀態</th><th>燈號基準</th></tr><tr><th>p策略一</th><td>BigA</td><td>紙單</td><td>自 10-01 起（末筆 10-01）</td><td style="text-align:left">BigA tick OOS（8 秒延遲）；百分位燈號</td></tr><tr><th>p策略2</th><td>SecBtoB.8</td><td>紙單</td><td>自 10-01 起（末筆 10-01）</td><td style="text-align:left">⚪ tick OOS（含 C4/C5、2 秒延遲）全段 15,563 筆，淨利 −7,024，MDD 110,664，六段 4 段賺；回測近乎持平，無逐日序列故不算百分位燈號</td></tr><tr><th>p策略3</th><td>K01</td><td>紙單</td><td>自 10-01 起（末筆 10-01）</td><td style="text-align:left">K01 tick OOS（2 秒延遲）；絕對基準：近60趟期望 &gt;0</td></tr></table></div>
 <div class="note">紙策略頁只跑紙單（損益用 sim_pnl_usd），依 webhook 的 slot 代碼（p1＝p策略一、p2＝p策略2、p3＝p策略3）歸屬，獨立記錄，不併入策略1～3，也不併入已停用 BigA／K01 的實單歷史。頁面上跑哪支策略以 slots.json 為準，日後可移頁。<br>p策略一 BigA 燈號基準為 8 秒延遲版 tick OOS（非 2 秒）。</div>
 <h2>策略頻率</h2><div class="wrap"><table><tr><th>策略</th><th>筆數</th><th>每日平均</th><th>每週平均</th><th>有交易天數</th><th>實際 vs 預期</th></tr><tr><th>TTF.1（紙單，槽1）</th><td>237</td><td>0.63</td><td>3.1</td><td>150 / 377</td><td>等待首筆 webhook</td></tr><tr><th>FOTT.2（實單，槽2）</th><td>180</td><td>0.53</td><td>2.6</td><td>116 / 342</td><td>上線 2 工作日共 2 筆，折合每週 5.0（預期 2.6）；本週 2 筆</td></tr><tr><th>TOTT.1（實單，槽3）</th><td>240</td><td>0.63</td><td>3.2</td><td>189 / 380</td><td>等待首筆 webhook</td></tr></table></div>
 <div class="note">口徑：樣本外逐筆紀錄，1 筆交易＝1 次進場訊號，天數以工作日計。兩支實單合計約每週 5.8 筆；非每天都有交易，連幾天無訊號屬正常。「實際 vs 預期」自該策略首筆 webhook 起算。來源：/workspace/dashboard/baseline/ 下三支 *_oos_trades.csv。</div>
-<h2>每日燈號變化</h2><div class="wrap"><table><tr><th>策略</th><th>09-28</th><th>09-29</th><th>09-30</th></tr>
-<tr><th>TTF.1</th><td>·</td><td>·</td><td>·</td></tr>
-<tr><th>FOTT.2</th><td>·</td><td>·</td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-3,178</div></td></tr>
-<tr><th>TOTT.1</th><td>·</td><td>·</td><td>·</td></tr>
-<tr style="opacity:.45"><th>K01<div class="note">已停用</div></th><td title="近60趟&gt;0🟢"><div class="l">🟢</div><div class="pos">+4,818</div></td><td title="近60趟&gt;0🟢"><div class="l">🟢</div><div class="pos">+1,620</div></td><td title="近60趟&gt;0🟠"><div class="l">🟠</div><div class="neg">-11,165</div></td></tr>
-<tr style="opacity:.45"><th>BigA<div class="note">已停用</div></th><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-760</div></td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-648</div></td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-499</div></td></tr>
-<tr style="opacity:.45"><th>TT.3<div class="note">已停用</div></th><td>·</td><td>·</td><td>·</td></tr>
-<tr><th colspan="4" style="text-align:left;background:#14171d">紙策略頁（紙單）</th></tr>
-<tr><th>p策略一 BigA（紙單）</th><td>·</td><td>·</td><td>·</td></tr>
-<tr><th>p策略2 SecBtoB.8（紙單）</th><td>·</td><td>·</td><td>·</td></tr>
-<tr><th>p策略3 K01（紙單）</th><td>·</td><td>·</td><td>·</td></tr>
+<h2>每日燈號變化</h2><div class="wrap"><table><tr><th>策略</th><th>09-28</th><th>09-29</th><th>09-30</th><th>10-01</th></tr>
+<tr><th>TTF.1</th><td>·</td><td>·</td><td>·</td><td>·</td></tr>
+<tr><th>FOTT.2</th><td>·</td><td>·</td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-3,178</div></td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="pos">+1,907</div></td></tr>
+<tr><th>TOTT.1</th><td>·</td><td>·</td><td>·</td><td>·</td></tr>
+<tr style="opacity:.45"><th>K01<div class="note">已停用</div></th><td title="近60趟&gt;0🟢"><div class="l">🟢</div><div class="pos">+4,818</div></td><td title="近60趟&gt;0🟢"><div class="l">🟢</div><div class="pos">+1,620</div></td><td title="近60趟&gt;0🟠"><div class="l">🟠</div><div class="neg">-11,165</div></td><td title="近60趟&gt;0🟠"><div class="l">🟠</div><div class="pos">+0</div></td></tr>
+<tr style="opacity:.45"><th>BigA<div class="note">已停用</div></th><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-760</div></td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-648</div></td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="neg">-499</div></td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="pos">+0</div></td></tr>
+<tr style="opacity:.45"><th>TT.3<div class="note">已停用</div></th><td>·</td><td>·</td><td>·</td><td>·</td></tr>
+<tr><th colspan="5" style="text-align:left;background:#14171d">紙策略頁（紙單）</th></tr>
+<tr><th>p策略一 BigA（紙單）</th><td>·</td><td>·</td><td>·</td><td title="20日SR⚪ 60日SR⚪ 近30趟⚪ 近60趟⚪"><div class="l">⚪</div><div class="pos">+102</div></td></tr>
+<tr><th>p策略2 SecBtoB.8（紙單）</th><td>·</td><td>·</td><td>·</td><td title="無回測基準⚪"><div class="l">⚪</div><div class="pos">+224</div></td></tr>
+<tr><th>p策略3 K01（紙單）</th><td>·</td><td>·</td><td>·</td><td title="近60趟&gt;0⚪"><div class="l">⚪</div><div class="pos">+224</div></td></tr>
 </table></div><div class="note">格內：燈號＋當日損益 USD。燈號取各子項最差者；對照各自 tick OOS 回測分佈（綠 ≥p10、黃 p5–p10、橘 p1–p5、紅 &lt;p1）。⚪＝樣本不足（未滿 20 日/30 趟）。K01 回測本身為負，改用「近60趟期望 &gt;0」。</div>
 <h2>最新數值</h2><div class="wrap"><table><tr><th>策略</th><th>燈號</th><th>天/趟</th><th>累計淨</th><th>20日SR</th><th>60日SR</th><th>近30趟</th><th>近60趟</th><th>回撤/MC95</th><th>實/模比<br>(假設40%)</th><th>滑價/趟</th></tr>
 <tr><th>TTF.1</th><td colspan="10">等待首筆 webhook</td></tr>
-<tr><th>FOTT.2</th><td class="l">⚪</td><td>1/1</td><td class="neg">-3,178</td><td>— ⚪</td><td>— ⚪</td><td>— ⚪</td><td>— ⚪</td><td>0 (0%)</td><td>—</td><td>105</td></tr>
+<tr><th>FOTT.2</th><td class="l">⚪</td><td>2/2</td><td class="neg">-1,271</td><td>— ⚪</td><td>— ⚪</td><td>— ⚪</td><td>— ⚪</td><td>0 (0%)</td><td>—</td><td>50</td></tr>
 <tr><th>TOTT.1</th><td colspan="10">等待首筆 webhook</td></tr>
-<tr style="color:#888"><th>K01<div class="note">已停用</div></th><td>—</td><td>3/194</td><td>-4,727</td><td colspan="7">已停用，保留歷史，不列燈號／警示（回撤 11,165）</td></tr>
-<tr style="color:#888"><th>BigA<div class="note">已停用</div></th><td>—</td><td>3/29</td><td>-1,907</td><td colspan="7">已停用，保留歷史，不列燈號／警示（回撤 1,147）</td></tr>
+<tr style="color:#888"><th>K01<div class="note">已停用</div></th><td>—</td><td>4/194</td><td>-4,727</td><td colspan="7">已停用，保留歷史，不列燈號／警示（回撤 11,165）</td></tr>
+<tr style="color:#888"><th>BigA<div class="note">已停用</div></th><td>—</td><td>4/29</td><td>-1,907</td><td colspan="7">已停用，保留歷史，不列燈號／警示（回撤 1,147）</td></tr>
 <tr><th>TT.3<div class="note">已停用</div></th><td colspan="10">無成交紀錄（已停用）</td></tr>
 <tr><th colspan="11" style="text-align:left;background:#14171d">紙策略頁（紙單）</th></tr>
-<tr><th>p策略一 BigA（紙單）</th><td colspan="10">等待首筆 webhook</td></tr>
-<tr><th>p策略2 SecBtoB.8（紙單）</th><td colspan="10">等待首筆 webhook</td></tr>
-<tr><th>p策略3 K01（紙單）</th><td colspan="10">等待首筆 webhook</td></tr>
+<tr><th>p策略一 BigA（紙單）</th><td class="l">⚪</td><td>1/1</td><td class="pos">+102</td><td>— ⚪</td><td>— ⚪</td><td>— ⚪</td><td>— ⚪</td><td>0 (0%)</td><td>—（紙單）</td><td>0</td></tr>
+<tr><th>p策略2 SecBtoB.8（紙單）</th><td class="l">⚪</td><td>1/2</td><td class="pos">+224</td><td>— </td><td>— </td><td>— </td><td>— </td><td>0 (—)</td><td>—（紙單）</td><td>0</td></tr>
+<tr><th>p策略3 K01（紙單）</th><td class="l">⚪</td><td>1/2</td><td class="pos">+224</td><td>— </td><td>— </td><td>— </td><td>— ⚪</td><td>0 (0%)</td><td>—（紙單）</td><td>0</td></tr>
 </table></div><div class="note">回測中位參考：TTF.1 近30趟 +140、20日SR 2.69；FOTT.2 近30趟 +176、20日SR 3.23；TOTT.1 近30趟 +556、20日SR 2.34。滑價以每筆 slippage_ticks×$5 加總，正值＝對實單不利。<br>p策略一 BigA：BigA tick OOS（8 秒延遲）；百分位燈號<br>p策略2 SecBtoB.8：⚪ tick OOS（含 C4/C5、2 秒延遲）全段 15,563 筆，淨利 −7,024，MDD 110,664，六段 4 段賺；回測近乎持平，無逐日序列故不算百分位燈號<br>p策略3 K01：K01 tick OOS（2 秒延遲）；絕對基準：近60趟期望 &gt;0</div>
 <h2>累計損益（紙單以模擬損益計）</h2><svg viewBox="0 0 640 180" style="width:100%;max-width:640px;background:#161a21">
 <line x1="30" x2="620" y1="101.5" y2="101.5" stroke="#555" stroke-dasharray="3"/>
-<polyline fill="none" stroke="#3ddbd9" stroke-width="2" points="620.0,144.2"/><text x="35" y="14" fill="#3ddbd9" font-size="12">FOTT.2</text>
-<polyline fill="none" stroke="#888" stroke-width="2" points="30.0,36.8 325.0,15.0 620.0,165.0"/><text x="115" y="14" fill="#888" font-size="12">K01</text>
-<polyline fill="none" stroke="#ffb84e" stroke-width="2" points="30.0,111.7 325.0,120.4 620.0,127.1"/><text x="195" y="14" fill="#ffb84e" font-size="12">BigA</text>
+<polyline fill="none" stroke="#3ddbd9" stroke-width="2" points="423.3,144.2 620.0,118.6"/><text x="35" y="14" fill="#3ddbd9" font-size="12">FOTT.2</text>
+<polyline fill="none" stroke="#888" stroke-width="2" points="30.0,36.8 226.7,15.0 423.3,165.0 620.0,165.0"/><text x="115" y="14" fill="#888" font-size="12">K01</text>
+<polyline fill="none" stroke="#ffb84e" stroke-width="2" points="30.0,111.7 226.7,120.4 423.3,127.1 620.0,127.1"/><text x="195" y="14" fill="#ffb84e" font-size="12">BigA</text>
+<polyline fill="none" stroke="#ff7eb6" stroke-width="2" stroke-dasharray="5,3" points="620.0,100.1"/><text x="35" y="28" fill="#ff7eb6" font-size="12">p策略一 BigA（紙）</text>
+<polyline fill="none" stroke="#9be15d" stroke-width="2" stroke-dasharray="5,3" points="620.0,98.5"/><text x="145" y="28" fill="#9be15d" font-size="12">p策略2 SecBtoB.8（紙）</text>
+<polyline fill="none" stroke="#c0c0ff" stroke-width="2" stroke-dasharray="5,3" points="620.0,98.5"/><text x="255" y="28" fill="#c0c0ff" font-size="12">p策略3 K01（紙）</text>
 <text x="2" y="19" fill="#888" font-size="10">6,438</text><text x="2" y="165" fill="#888" font-size="10">-4,727</text></svg>
 <div class="note">HMM 市場狀態：尚未接入（僅參考欄位，規劃中）。</div></body></html>
