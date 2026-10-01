@@ -1,0 +1,5 @@
+# 逐筆交易檔不得公開／不得進 git（2026-10-01 GM/Charles 未決定前）
+*per_trade*
+*trades*.csv
+*_oos_*
+export/
