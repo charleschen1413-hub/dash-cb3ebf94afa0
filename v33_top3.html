@@ -11,13 +11,25 @@
 <div class="tw"><table class="st"><tr><th>項目</th><th>前組合：FOTT／f7.1／f2.3</th><th>新組合：f20.2／f9.8／f10.1</th></tr><tr><td>淨利 USD</td><td class=n>545,732</td><td class=n>554,165</td></tr><tr><td>日結最大回撤 USD</td><td class=n>20,066</td><td class=n>46,402</td></tr><tr><td>PF</td><td class=n>2.177</td><td class=n>2.245</td></tr><tr><td>最差單日 USD</td><td class=n>−12,941</td><td class=n>−14,510</td></tr><tr><td>接納／跳過</td><td class=n>1,066／86</td><td class=n>1,070／130</td></tr></table></div>
 <div class="tw"><table class="st"><tr><th>策略</th><th>限制後淨利 USD</th><th>跳過筆數</th></tr><tr><td>1：fast_sif.f20.2</td><td class=n>98,572</td><td class=n>6</td></tr><tr><td>2：sV43.1</td><td class=n>100,650</td><td class=n>11</td></tr><tr><td>3：fast_sif.f9.8</td><td class=n>126,890</td><td class=n>6</td></tr><tr><td>4：sif.f2.1</td><td class=n>52,832</td><td class=n>54</td></tr><tr><td>5：fast_sif.f10.1</td><td class=n>78,437</td><td class=n>10</td></tr><tr><td>6：xV441.1</td><td class=n>96,784</td><td class=n>43</td></tr><tr><td><b>合計</b></td><td class=n><b>554,165</b></td><td class=n><b>130</b></td></tr></table></div>
 <p>不限口數淨利640,640美元；共用兩口後減少86,475美元（13.50%）。策略4受額度競爭影響最大，跳過54筆，淨利由95,080降至52,832美元。</p>
-<img src="assets/f98_pnl_overlay.png?v=20261015a" alt="六策略累積損益">
+<img src="assets/f98_fott_pnl_overlay.png?v=20261015a" alt="六策略累積損益">
 <p>相關性有兩組明顯重疊：</p>
 <ul>
 <li><b>策略1 f20.2 ↔ 策略4 f2.1：</b>原始0.681，限倉後 0.592。</li>
 <li><b>策略5 f10.1 ↔ 策略6 xV441.1：</b>原始0.725，限倉後 0.687。</li>
 <li><b>策略3 f9.8：</b>與其他策略限倉後相關性介於−0.056～0.089，較低。</li>
 </ul>
-<img src="assets/f98_correlation.png?v=20261015a" alt="六策略相關性">
+<img src="assets/f98_fott_correlation.png?v=20261015a" alt="六策略相關性">
+<h3 style="font-size:15px;margin-top:16px">策略6 xV441.1 → FOTT.2 比較（回測，正式設定未改）</h3>
+<p><b>策略6由xV441.1換成FOTT.2，日結最大回撤降低15.16%，但淨利減少6.37%，最差單日反而更差。屬於部分改善。</b></p>
+<p>其餘五策略保持最新配置，沿用原OOS及每方向共用2口：</p>
+<div class="tw"><table class="st"><tr><th>指標</th><th>策略6：xV441.1</th><th>策略6：FOTT.2</th><th>變化</th></tr><tr><td>淨利 USD</td><td class=n>554,165</td><td class=n>518,869</td><td class=n>−35,296（−6.37%）</td></tr><tr><td>日結最大回撤 USD</td><td class=n>46,402</td><td class=n>39,367</td><td class=n>降低7,035（15.16%）</td></tr><tr><td>PF</td><td class=n>2.245</td><td class=n>2.232</td><td class=n>略降</td></tr><tr><td>最差單日 USD</td><td class=n>−14,510</td><td class=n>−15,764</td><td class=n>多虧1,254</td></tr><tr><td>接納交易</td><td class=n>1,070</td><td class=n>947</td><td class=n>−123筆</td></tr><tr><td>跳過交易</td><td class=n>130</td><td class=n>113</td><td class=n>−17筆</td></tr></table></div>
+<p>相關性改善最明顯的是策略5與6：</p>
+<ul>
+<li>f10.1 ↔ xV441.1：限倉後 0.687</li>
+<li>f10.1 ↔ FOTT.2：限倉後 0.197</li>
+</ul>
+<p>但策略1 f20.2與策略4 f2.1仍有0.586相關性，這組重疊沒有明顯改善。策略4跳過筆數也由54增至57筆，因此不能說換入FOTT後全面釋放了額度。</p>
+<p>這段回測的取捨是：少賺約3.53萬美元，換得最大回撤少約7千美元；仍未解決最差單日與策略1／4重疊問題。</p>
+<p>期間2025/3/24～2026/9/4，扣來回成本8美元；以上為已平倉日結損益，不含盤中浮損。正式設定未改動。</p>
 </section>
 </body></html>
