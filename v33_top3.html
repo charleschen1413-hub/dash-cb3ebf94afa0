@@ -3,7 +3,7 @@
 <h1>NQ 英雄榜｜漏斗四階排名＋固定參數延伸驗證</h1>
 <div class="note" style="margin:6px 0 10px"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a></div>
 <div class="note">實單：策略1 FOTT.2、2 sV43.1、3 sif.f7.1、4 sif.f2.1、5 sif.f2.3、6 xV441.1（六支共用 2 口）</div>
-<a href="assets/hero_funnel.png?v=20261015e"><img src="assets/hero_funnel.png?v=20261015c" alt="NQ 英雄榜 漏斗四階過審條件與排名"></a>
+<a href="assets/hero_funnel.png?v=20261019a"><img src="assets/hero_funnel.png?v=20261015c" alt="NQ 英雄榜 漏斗四階過審條件與排名"></a>
 <h2 style="font-size:16px;margin-top:22px">六策略配置分析（策略1 fast_sif.f20.2、策略3 fast_sif.f9.8、策略5 fast_sif.f10.1）</h2>
 <section class="txt">
 <p><b>替換三策略後，六策略共用每方向2口淨利554,165美元；比前組合多8,433美元，但日結最大回撤由20,066升至46,402美元。</b></p>
@@ -40,5 +40,19 @@
 <div class="tw"><table class="st"><tr><th>策略</th><th>平均每週持單</th><th>平均每筆持單</th></tr><tr><td>1：fast_sif.f20.2</td><td class=n>9.81 hr</td><td class=n>3.52 hr</td></tr><tr><td>2：sV43.1</td><td class=n>7.37 hr</td><td class=n>4.65 hr</td></tr><tr><td>3：fast_sif.f9.8</td><td class=n><strong>13.56 hr</strong></td><td class=n><strong>8.63 hr</strong></td></tr><tr><td>4：sif.f2.1</td><td class=n>4.80 hr</td><td class=n>2.16 hr</td></tr><tr><td>5：fast_sif.f10.1</td><td class=n>4.10 hr</td><td class=n>1.83 hr</td></tr><tr><td>6：FOTT.2</td><td class=n>7.94 hr</td><td class=n>3.78 hr</td></tr></table></div>
 <p><strong>f9.8是持單最久的策略。</strong> 換入FOTT.2後，帳戶有部位的時間增加，但各口加總時間僅小幅增加，表示重疊持倉程度下降。</p>
 <p>這是歷史模擬，不代表目前實單運行狀態；比例依標準115小時／週換算，未另扣假日或提早收盤。</p>
+<h3 style="font-size:15px;margin-top:16px">策略1 fast_sif.f20.2 → K01.trans.10 替換分析</h3>
+<p>已更新：策1＝K01.trans.10、策6＝K01.trans.5實單，fast_sif.f20.2下架。trans.10延伸已核對：＋13,416 USD、日結MDD 8,579 USD。</p>
+<p>這次替換降低了與 sif.f2.1 的相關性，但歷史組合風險沒有改善。</p>
+<div class="tw"><table class="st"><tr><th>六策略組合</th><th>換入前</th><th>換入trans.10後</th></tr><tr><td>未限倉總淨利</td><td class=n>637,591</td><td class=n>648,545</td></tr><tr><td>每方向2口後淨利</td><td class=n>496,790</td><td class=n>495,297</td></tr><tr><td>限倉後日結MDD</td><td class=n>48,669</td><td class=n>51,714</td></tr><tr><td>限倉後年化日SR</td><td class=n>4.528</td><td class=n>3.472</td></tr><tr><td>跳過交易筆數</td><td class=n>248</td><td class=n>444</td></tr></table></div>
+<img src="assets/k01t10_skip_table.png?v=20261019a" alt="策1換入 K01.trans.10｜重疊跳過與組合淨利">
+<ul>
+<li><strong>分散性：</strong>trans.10與其餘四支相關性約−0.103～0.076；與trans.5較高，原始 0.497、限倉後 0.472。</li>
+</ul>
+<img src="assets/k01t10_correlation.png?v=20261019a" alt="策1 K01.trans.10｜策6 K01.trans.5：換入後六策略相關性">
+<ul>
+<li>重疊效益：未限倉多賺10,954，但新增的跳過交易損失為12,447，最後限倉後少賺1,493美元。</li>
+<li><strong>配置影響：</strong>sif.f2.1限倉後淨利增加41,663，但其他保留策略合計減少62,833。低相關性仍可能伴隨進場時的口數競爭。</li>
+</ul>
+<p>這是377日歷史交易接納模擬：每方向2口、先出後進、同時進場按策1→6、拒單不排隊，保留原策略退出；並非MC2實際成交重播。兩支K01仍未通過四漏斗且無固定停損，圖中已明列。</p>
 </section>
 </body></html>
