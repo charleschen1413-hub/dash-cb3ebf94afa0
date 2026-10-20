@@ -3,7 +3,7 @@
 <h1>NQ 英雄榜｜漏斗四階排名＋固定參數延伸驗證</h1>
 <div class="note" style="margin:6px 0 10px"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="secure.html">加密</a></div>
 <div class="note">實單：策略1 FOTT.2、2 sV43.1、3 sif.f7.1、4 sif.f2.1、5 sif.f2.3、6 xV441.1（六支共用 2 口）</div>
-<a href="assets/hero_funnel.png?v=20261019a"><img src="assets/hero_funnel.png?v=20261015c" alt="NQ 英雄榜 漏斗四階過審條件與排名"></a>
+<a href="assets/hero_funnel.png?v=20261020a"><img src="assets/hero_funnel.png?v=20261015c" alt="NQ 英雄榜 漏斗四階過審條件與排名"></a>
 <h2 style="font-size:16px;margin-top:22px">六策略配置分析（策略1 fast_sif.f20.2、策略3 fast_sif.f9.8、策略5 fast_sif.f10.1）</h2>
 <section class="txt">
 <p><b>替換三策略後，六策略共用每方向2口淨利554,165美元；比前組合多8,433美元，但日結最大回撤由20,066升至46,402美元。</b></p>
@@ -54,5 +54,15 @@
 <li><strong>配置影響：</strong>sif.f2.1限倉後淨利增加41,663，但其他保留策略合計減少62,833。低相關性仍可能伴隨進場時的口數競爭。</li>
 </ul>
 <p>這是377日歷史交易接納模擬：每方向2口、先出後進、同時進場按策1→6、拒單不排隊，保留原策略退出；並非MC2實際成交重播。兩支K01仍未通過四漏斗且無固定停損，圖中已明列。</p>
+<h3 style="font-size:15px;margin-top:16px">策六換 K01v331_tier1：六策略獨立曲線、疊加與跳過分析（含延伸）</h3>
+<div class="tw"><table class="st"><tr><th>策別</th><th>策略</th><th>總筆數</th><th>接受</th><th>跳過</th><th>獨立淨利</th><th>限口後淨利</th><th>跳過淨利差額</th></tr><tr><td class=n>1</td><td>SecBtoB.8v331_stopf1_tier1</td><td class=n>7,392</td><td class=n>7,202</td><td class=n>190</td><td class=n>154,994</td><td class=n>146,029</td><td class=n>8,965</td></tr><tr><td class=n>2</td><td>sV43.1</td><td class=n>138</td><td class=n>110</td><td class=n>28</td><td class=n>105,216</td><td class=n>84,665</td><td class=n>20,551</td></tr><tr><td class=n>3</td><td>fast_sif.f9.8</td><td class=n>129</td><td class=n>53</td><td class=n>76</td><td class=n>135,373</td><td class=n>81,706</td><td class=n>53,667</td></tr><tr><td class=n>4</td><td>sif.f2.1</td><td class=n>230</td><td class=n>99</td><td class=n>131</td><td class=n>97,710</td><td class=n>54,173</td><td class=n>43,537</td></tr><tr><td class=n>5</td><td>fast_sif.f10.1</td><td class=n>181</td><td class=n>111</td><td class=n>70</td><td class=n>86,517</td><td class=n>53,117</td><td class=n>33,400</td></tr><tr><td class=n>6</td><td>K01v331_tier1</td><td class=n>15,450</td><td class=n>14,156</td><td class=n>1,294</td><td class=n>41,305</td><td class=n>−52,993</td><td class=n>94,298</td></tr></table></div>
+<p>只顯示替換後六支：策1 SecBtoB.8v331_stopf1_tier1/B16；策2 sV43.1；策3 fast_sif.f9.8；策4 sif.f2.1；策5 fast_sif.f10.1；策6 K01v331_tier1/B8。2025/3/24～2026/9/28，共393交易日。每支各1口NQ、RT8美元，沿用各來源成交及延遲。沒有把原始K01組合或單獨五支組合放進圖。</p>
+<p>六條細線是各策略獨立運作的原始累積淨利；灰虛線為不限口數六支直接相加；深藍粗線為多方最多2口、空方最多2口的准入情境。下圖為不限口數減限口後的累積淨利差；正值表示跳過交易後淨利減少，負值表示省去虧損。差額已含各筆原RT8成本，並非額外增加的費用。</p>
+<img src="assets/k01t1_cum.png?v=20261020a" alt="替換後六策略累積已平倉淨損益">
+<p>不限口數全段淨利 621,115，日SR 2.826、日MDD 79,931；每方向2口後淨利 366,697，日SR 1.929、日MDD 67,098。共跳過1,789/23,520筆，淨利差額254,418美元。</p>
+<p>策6被跳過1,294筆，這批交易淨賺94,298，使策6保留交易的淨利變成-52,993（獨立版41,305）。策1跳過190筆，跳過淨利8,965。這顯示口數限制依當時部位占用篩選了不同交易，不是單純把所有策略等比例縮小。不能據此斷定哪個優先順位最好；沒有重新搜尋順位。</p>
+<img src="assets/k01t1_daily_corr.png?v=20261020a" alt="策六換K01v331_tier1／B8：每日淨損益相關性">
+<img src="assets/k01t1_entry_exit_corr.png?v=20261020a" alt="替換情境六支進出場相關性">
+<p>跳過紀錄採同時刻先出場、再按策1→6判定新進場；不因拒絕進場而修改原策略影子狀態，已接受交易沿用原出場。這是准入情境，並非券商實際淨額、成交或MC2完整引擎重播。延伸已曝光；本次不改榜單、實單角色、參數或審核結論。K01tier1延伸排除舊快照收盤禁入時段的7美元交易，採23,805/595筆，與前張圖一致。</p>
 </section>
 </body></html>
