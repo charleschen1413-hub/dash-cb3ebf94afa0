@@ -1,8 +1,29 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>重疊分析</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a></div>
 <h1>重疊分析</h1>
-<img src="assets/overlap/candidates9_20261024.png?v=20261024c" alt="上架候選表 9支 2026-10-24">
+<img src="assets/overlap/candidates11_20261025.png?v=20261025a" alt="上架候選表 11支 2026-10-25">
+<h2>十一寶（加入 M3.05）</h2>
+<p>有。先釐清：共用2口比1口的組合淨利高；效益有限的是「在2口限制下，再加入 M3.05」。 它原 OOS 使組合少賺 $622，但二考增加 $3,020。</p>
+<p>下表為十一寶、每方向共用2口。跳過淨利：正數＝錯過獲利；負數＝避開虧損。</p>
+<table><tr><th>策略</th><th>原 OOS 接納／跳過</th><th>接納淨利</th><th>跳過淨利</th><th>二考接納／跳過</th><th>接納淨利</th><th>跳過淨利</th></tr><tr><td>FOTT.2</td><td>141／39</td><td>$45,087</td><td>+$31,498</td><td>12／5</td><td>$7,419</td><td>−$3,835</td></tr><tr><td>evo13_stop.1</td><td>201／38</td><td>$80,747</td><td>+$12,886</td><td>11／3</td><td>$4,742</td><td>−$4,584</td></tr><tr><td>evo14_dstopmae.22</td><td>103／6</td><td>$96,971</td><td>+$7,407</td><td>3／0</td><td>$791</td><td>$0</td></tr><tr><td>sif.f3.1</td><td>140／37</td><td>$38,275</td><td>+$26,169</td><td>10／1</td><td>−$1,090</td><td>−$1,828</td></tr><tr><td>evo18_exit.2</td><td>135／21</td><td>$74,765</td><td>+$12,662</td><td>15／0</td><td>−$800</td><td>$0</td></tr><tr><td>fast_sif.f20.2</td><td>186／31</td><td>$91,102</td><td>+$12,712</td><td>11／1</td><td>$26,972</td><td>−$673</td></tr><tr><td>B1.04</td><td>409／85</td><td>$56,583</td><td>+$11,425</td><td>43／10</td><td>$4,841</td><td>+$2,565</td></tr><tr><td>M1.02</td><td>30／10</td><td>$17,945</td><td>+$6,405</td><td>4／2</td><td>−$3,857</td><td>+$3,174</td></tr><tr><td>M2.05</td><td>16／26</td><td>$12,372</td><td>+$30,087</td><td>0／1</td><td>$0</td><td>+$3,967</td></tr><tr><td>Selene_Aroon</td><td>186／26</td><td>$93,642</td><td>+$41,662</td><td>13／3</td><td>$4,516</td><td>+$2,156</td></tr><tr><td>M3.05</td><td>16／9</td><td>$3,237</td><td>+$33,628</td><td>1／0</td><td>$3,532</td><td>$0</td></tr><tr><td>合計</td><td>1,563／328</td><td>$610,726</td><td>+$226,541</td><td>123／26</td><td>$47,066</td><td>+$942</td></tr></table>
+<p>M3.05 的問題很明確：原 OOS 被跳過的9筆，集中占了它約91%的原始淨利。</p>
+<table><tr><th>M3.05 加入造成的影響（共用2口）</th><th>原 OOS</th><th>Bento 二考</th></tr><tr><td>M3.05 接納交易淨利</td><td>+$3,237</td><td>+$3,532</td></tr><tr><td>擠掉原有策略交易的淨影響</td><td>−$3,859（12筆）</td><td>−$512（B1.04一筆）</td></tr><tr><td>組合實際增量</td><td>−$622</td><td>+$3,020</td></tr></table>
+<p>整體容量比較：</p>
+<table><tr><th>期間</th><th>共用1口：淨利／跳過</th><th>共用2口：淨利／跳過</th></tr><tr><td>原 OOS</td><td>$392,057／865筆</td><td>$610,726／328筆</td></tr><tr><td>Bento 二考</td><td>$19,470／59筆</td><td>$47,066／26筆</td></tr></table>
+<p>所以 M2.05、M3.05 都受到容量限制，但被擋住的交易與獲利分布不同。目前的接納淨利也不等於「移除該策略能改善多少」；移除後其他策略會補進來，需要重新模擬，不能直接扣除。</p>
+<p>十一寶納入 M3.05 完成。二考1口、2口皆增加淨利，日結回撤不變；原 OOS 共用2口則略少賺。</p>
+<table><tr><th>期間</th><th>每方向上限</th><th>十寶淨利 → 十一寶淨利</th><th>增量</th><th>日結 MDD 變化</th></tr><tr><td>原 OOS</td><td>1口</td><td>$387,595 → $392,057</td><td>+$4,462</td><td>$22,993 → $23,011</td></tr><tr><td>原 OOS</td><td>2口</td><td>$611,348 → $610,726</td><td>−$622</td><td>$24,446 → $25,057</td></tr><tr><td>Bento 二考</td><td>1口</td><td>$17,237 → $19,470</td><td>+$2,233</td><td>$7,883 → $7,883</td></tr><tr><td>Bento 二考</td><td>2口</td><td>$44,046 → $47,066</td><td>+$3,020</td><td>$9,330 → $9,330</td></tr></table>
+<h2>十寶（加入 Selene_Aroon）</h2>
+<img src="assets/overlap/candidates10_20261025.jpg?v=20261025a" alt="上架候選表 10支 2026-10-25">
+<img src="assets/overlap/ten_cum.png?v=20261025a" alt="十個寶貝 損益疊加 加入 Selene_Aroon">
+<p>十寶疊加完成。共用2口時，加入 Selene_Aroon 在原 OOS、二考都提高淨利，日結回撤也降低。</p>
+<table><tr><th>期間</th><th>每方向上限</th><th>九寶淨利 → 十寶淨利</th><th>增量</th><th>日結 MDD 變化</th></tr><tr><td>原 OOS</td><td>1口</td><td>$340,760 → $387,595</td><td>+$46,835</td><td>$21,258 → $22,993</td></tr><tr><td>原 OOS</td><td>2口</td><td>$539,412 → $611,348</td><td>+$71,936</td><td>$26,438 → $24,446</td></tr><tr><td>Bento 二考</td><td>1口</td><td>$22,633 → $17,237</td><td>−$5,396</td><td>$11,221 → $7,883</td></tr><tr><td>Bento 二考</td><td>2口</td><td>$39,485 → $44,046</td><td>+$4,561</td><td>$9,492 → $9,330</td></tr></table>
+<p>你重視的二考交易頻率：</p>
+<table><tr><th>十寶二考</th><th>接納／跳過</th><th>平均每日</th><th>每5個交易日</th></tr><tr><td>共用1口</td><td>91／57筆</td><td>3.64筆</td><td>18.2筆</td></tr><tr><td>共用2口</td><td>123／25筆</td><td>4.92筆</td><td>24.6筆</td></tr></table>
+<p>共用1口下，Selene 本身接納11筆、賺 $3,607，但占用容量後使其他策略合計少賺 $9,003，所以組合反而減少 $5,396。共用2口則接納13筆、貢獻 $4,516，對其他策略的淨影響僅 +$45。</p>
+<p>已統一377日窗，核對 Selene 212筆／$135,304；補出多空方向後，與 ZIP 原逐筆時間、淨利完全一致。以上是固定逐筆限倉模擬，非實盤重播；日結 MDD 不含盤中浮虧，強制出場標記仍待補。</p>
 <h2>九寶（加入 M2.05）</h2>
+<img src="assets/overlap/candidates9_20261024.png?v=20261024c" alt="上架候選表 9支 2026-10-24">
 <img src="assets/overlap/nine_corr.png?v=20261024c" alt="九策略相關性 加入 M2.05">
 <img src="assets/overlap/nine_cum.png?v=20261024c" alt="八支→九支 加入 M2.05 後的損益與回撤">
 <p>九支完成。共用2口的二考淨利為 $39,485、日結 MDD $9,492；M2.05 唯一一筆被限倉跳過，因此與原八支相同。</p>
