@@ -1,8 +1,19 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>重疊分析</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a></div>
 <h1>重疊分析</h1>
-<img src="assets/overlap/candidates11_20261025.png?v=20261025a" alt="上架候選表 11支 2026-10-25">
+<img src="assets/overlap/candidates11b_20261025.png?v=20261025b" alt="上架候選表 11寶+1支下架對照 2026-10-25">
+<h2>新十一寶（evo31_daily.1 取代 evo13_stop.1）</h2>
+<img src="assets/overlap/eleven_b_corr.png?v=20261025b" alt="11寶 evo31_daily.1 取代 evo13_stop.1 相關性">
+<img src="assets/overlap/eleven_b_cum.png?v=20261025b" alt="11寶換入 evo31_daily.1 綜合損益">
+<p>已完成。換入 evo31_daily.1 後，四種情境都提高組合淨利、降低日結回撤。 進出場逐筆已補齊，損益與包內結果完全一致。</p>
+<table><tr><th>期間</th><th>每方向上限</th><th>換前 → 換後淨利</th><th>增量</th><th>日結 MDD</th></tr><tr><td>原 OOS</td><td>1口</td><td>$392,057 → $405,512</td><td>+$13,455</td><td>$23,011 → $17,741</td></tr><tr><td>原 OOS</td><td>2口</td><td>$610,726 → $626,780</td><td>+$16,054</td><td>$25,057 → $21,280</td></tr><tr><td>Bento 二考</td><td>1口</td><td>$19,470 → $19,817</td><td>+$347</td><td>$7,883 → $7,728</td></tr><tr><td>Bento 二考</td><td>2口</td><td>$47,066 → $49,040</td><td>+$1,974</td><td>$9,330 → $7,830</td></tr></table>
+<p>共用2口時，新策略原 OOS 接納197筆、跳過31筆；二考接納7筆、跳過5筆，跳過的交易合計虧損 $2,805。</p>
+<p>新策略與其他十支的原始日損益相關性：</p>
+<ul><li>原 OOS：−0.046～0.229。</li>
+<li>二考：−0.184～0.289；僅25日，仍屬短期觀察。</li></ul>
+<p>以下是凍結逐筆接納模擬；MDD為日結已實現回撤，不含盤中浮虧。</p>
 <h2>十一寶（加入 M3.05）</h2>
+<img src="assets/overlap/candidates11_20261025.png?v=20261025a" alt="上架候選表 11支 2026-10-25">
 <p>有。先釐清：共用2口比1口的組合淨利高；效益有限的是「在2口限制下，再加入 M3.05」。 它原 OOS 使組合少賺 $622，但二考增加 $3,020。</p>
 <p>下表為十一寶、每方向共用2口。跳過淨利：正數＝錯過獲利；負數＝避開虧損。</p>
 <table><tr><th>策略</th><th>原 OOS 接納／跳過</th><th>接納淨利</th><th>跳過淨利</th><th>二考接納／跳過</th><th>接納淨利</th><th>跳過淨利</th></tr><tr><td>FOTT.2</td><td>141／39</td><td>$45,087</td><td>+$31,498</td><td>12／5</td><td>$7,419</td><td>−$3,835</td></tr><tr><td>evo13_stop.1</td><td>201／38</td><td>$80,747</td><td>+$12,886</td><td>11／3</td><td>$4,742</td><td>−$4,584</td></tr><tr><td>evo14_dstopmae.22</td><td>103／6</td><td>$96,971</td><td>+$7,407</td><td>3／0</td><td>$791</td><td>$0</td></tr><tr><td>sif.f3.1</td><td>140／37</td><td>$38,275</td><td>+$26,169</td><td>10／1</td><td>−$1,090</td><td>−$1,828</td></tr><tr><td>evo18_exit.2</td><td>135／21</td><td>$74,765</td><td>+$12,662</td><td>15／0</td><td>−$800</td><td>$0</td></tr><tr><td>fast_sif.f20.2</td><td>186／31</td><td>$91,102</td><td>+$12,712</td><td>11／1</td><td>$26,972</td><td>−$673</td></tr><tr><td>B1.04</td><td>409／85</td><td>$56,583</td><td>+$11,425</td><td>43／10</td><td>$4,841</td><td>+$2,565</td></tr><tr><td>M1.02</td><td>30／10</td><td>$17,945</td><td>+$6,405</td><td>4／2</td><td>−$3,857</td><td>+$3,174</td></tr><tr><td>M2.05</td><td>16／26</td><td>$12,372</td><td>+$30,087</td><td>0／1</td><td>$0</td><td>+$3,967</td></tr><tr><td>Selene_Aroon</td><td>186／26</td><td>$93,642</td><td>+$41,662</td><td>13／3</td><td>$4,516</td><td>+$2,156</td></tr><tr><td>M3.05</td><td>16／9</td><td>$3,237</td><td>+$33,628</td><td>1／0</td><td>$3,532</td><td>$0</td></tr><tr><td>合計</td><td>1,563／328</td><td>$610,726</td><td>+$226,541</td><td>123／26</td><td>$47,066</td><td>+$942</td></tr></table>
