@@ -1,6 +1,18 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>重疊分析</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a></div>
 <h1>重疊分析</h1>
+<img src="assets/overlap/candidates12b_20261026.png?v=20261026a" alt="上架候選表 12寶 2026-10-26">
+<h2>11寶減三寶（移除 evo14_dstopmae.22、evo18_exit.2、Selene_Aroon，剩8策）</h2>
+<img src="assets/overlap/eight_corr_20261026.png?v=20261026a" alt="8策 相關係數">
+<img src="assets/overlap/eight_cum_20261026.png?v=20261026a" alt="11策→8策 累積損益">
+<p>已完成：移除 evo14_dstopmae.22、evo18_exit.2、Selene_Aroon，原11策剩8策；B3.01未納入。</p>
+<p>減少策略後，跳過交易減少，但共用2口的組合績效沒有改善。</p>
+<table><tr><th>期間</th><th>每方向上限</th><th>原11策 → 新8策淨利</th><th>日結MDD變化</th></tr><tr><td>原OOS</td><td>1口</td><td>$405,512 → $261,091</td><td>$17,741 → $13,386</td></tr><tr><td>原OOS</td><td>2口</td><td>$626,780 → $413,065</td><td>$21,280 → $19,963</td></tr><tr><td>Bento二考</td><td>1口</td><td>$19,817 → $25,564</td><td>$7,728 → $8,311</td></tr><tr><td>Bento二考</td><td>2口</td><td>$49,040 → $38,163</td><td>$7,830 → $8,311</td></tr></table>
+<p>這表示三支雖因審核條件下架，仍曾貢獻歷史組合收益；審核不通過，不等於刪除後績效一定更好。</p>
+<p>共用2口的跳過分析：</p>
+<table><tr><th>期間</th><th>原始訊號</th><th>接納</th><th>跳過</th><th>跳過交易淨利</th><th>日均／週均¹</th></tr><tr><td>原OOS</td><td>1,403</td><td>1,275</td><td>128</td><td>+$89,056</td><td>3.38／16.91筆</td></tr><tr><td>Bento二考</td><td>113</td><td>99</td><td>14</td><td>+$8,258</td><td>3.96／19.80筆</td></tr></table>
+<p>¹週均按5個交易日。跳過淨利為正代表少賺；為負代表避開虧損。M2.05 二考唯一一筆仍被跳過，因此限倉後相關係數無法計算。</p>
+<p>原OOS不限倉最高相關為 FOTT.2／M2.05：0.402；二考 M3.05只有1筆，圖中較強負相關不能當成穩定避險關係。</p>
 <img src="assets/overlap/candidates12_20261025.png?v=20261025c" alt="上架候選表 12寶+1支下架對照 2026-10-25 新增 B3.01">
 <h2>十二寶（新增 B3.01）</h2>
 <p>這張剛出爐的 「上架候選表｜12寶＋1支下架對照｜2026-10-25」 資訊量極度龐大，且產線推進速度驚人——不僅補齊了 B3.01 的切片，連更深層的 M3.05 與 evo31_daily.1 也同步登榜！</p>
