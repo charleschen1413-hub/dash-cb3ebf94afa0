@@ -3,6 +3,22 @@
 <h1>重疊分析</h1>
 <h2>三寶（3支 Live ON｜9支停用／下架對照＋3候選，2026-10-27）</h2>
 <img src="assets/overlap/three_b_board_20261027.png?v=20261027a" alt="三寶榜單 2026-10-27">
+<img src="assets/overlap/three_b_corr_20261027.png?v=20261027a" alt="三寶 相關性 2026-10-27">
+<img src="assets/overlap/three_b_cum_20261027.png?v=20261027a" alt="三寶 損益疊加曲線 2026-10-27">
+<p>三策略分析完成：日損益相關性偏低，但仍有同向持倉重疊；共用2口時，大部分交易能接納。</p>
+<p>這次沿用含研究端C4＋C5的凍結逐筆，未套用新訂的$2,000緊急停損與上架後熔斷，不代表新保護設定下的績效。</p>
+<p>損益疊加</p>
+<table><tr><th>期間</th><th>每方向上限</th><th>接納／跳過</th><th>淨利</th><th>日結MDD</th></tr><tr><td>原OOS・377日</td><td>1口</td><td>742／160筆</td><td>$195,454</td><td>$17,475</td></tr><tr><td>原OOS・377日</td><td>2口</td><td>888／14筆</td><td>$229,791</td><td>$19,052</td></tr><tr><td>Bento二考・25日</td><td>1口</td><td>67／15筆</td><td>$13,064</td><td>$10,816</td></tr><tr><td>Bento二考・25日</td><td>2口</td><td>79／3筆</td><td>$18,403</td><td>$10,304</td></tr></table>
+<p>兩口接納頻率：原OOS 每日2.36筆／每5交易日11.78筆；二考 每日3.16筆／每5交易日15.8筆。</p>
+<p>共用2口的跳過分析</p>
+<p>「跳過淨利」為正代表少賺，負值代表避開虧損。</p>
+<table><tr><th>期間</th><th>策略</th><th>接納／跳過</th><th>接納淨利</th><th>跳過淨利</th></tr><tr><td>原OOS</td><td>FOTT.2</td><td>178／2</td><td>$75,291</td><td>+$1,294</td></tr><tr><td>原OOS</td><td>evo31_daily.1</td><td>228／0</td><td>$85,596</td><td>$0</td></tr><tr><td>原OOS</td><td>B1.04</td><td>482／12</td><td>$68,904</td><td>−$896</td></tr><tr><td>二考</td><td>FOTT.2</td><td>17／0</td><td>$3,584</td><td>$0</td></tr><tr><td>二考</td><td>evo31_daily.1</td><td>11／1</td><td>$8,117</td><td>−$4,883</td></tr><tr><td>二考</td><td>B1.04</td><td>51／2</td><td>$6,702</td><td>+$704</td></tr></table>
+<p>二考兩口淨利高於不限倉的$14,224，主要因為剛好擋掉evo31_daily.1一筆−$4,883。 這是歷史接納順序的結果，不能假設未來也會擋虧留盈。</p>
+<p>持倉重疊與相關性</p>
+<p>以下是不限倉原始交易中，曾與對方同向持倉重疊的筆數；同一筆可能重疊多支，不能跨列加總。</p>
+<table><tr><th>配對</th><th>原OOS：兩方各自重疊筆數</th><th>二考：兩方各自重疊筆數</th></tr><tr><td>FOTT.2／evo31_daily.1</td><td>51/180；47/228</td><td>3/17；3/12</td></tr><tr><td>FOTT.2／B1.04</td><td>52/180；73/494</td><td>7/17；8/53</td></tr><tr><td>evo31_daily.1／B1.04</td><td>54/228；83/494</td><td>8/12；11/53</td></tr></table>
+<p>二考evo31_daily.1有8筆與B1.04同向重疊，但兩者日損益相關僅0.020。 低損益相關不等於不會競爭持倉名額。</p>
+<table><tr><th>原始日損益Pearson</th><th>原OOS</th><th>二考</th></tr><tr><td>FOTT.2／evo31_daily.1</td><td>0.203</td><td>0.067</td></tr><tr><td>FOTT.2／B1.04</td><td>0.047</td><td>0.113</td></tr><tr><td>evo31_daily.1／B1.04</td><td>−0.046</td><td>0.020</td></tr></table>
 <h2>三紅線，五漏斗更新（2026-10-27）</h2>
 <p>經歷了這兩天 <code>sif.f3.1</code> 連吞兩單觸發保險絲（-$4,481 USD）以及 <code>evoM3.05</code> 單筆直接打穿 -$4,953 USD 的實彈衝擊，這套「研發到實盤」的審核體系必須做出<strong>制度級的重組</strong>。</p>
 <p>過去的教訓非常清晰：歷史長跑指標（WFE、PSR $p$、日 SR）只能證明「它過去不是騙子」，但完全無法預測「它現在有沒有帶病」。</p>
