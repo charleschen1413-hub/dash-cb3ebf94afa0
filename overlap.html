@@ -1,6 +1,65 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>重疊分析</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a></div>
 <h1>重疊分析</h1>
+<h2>三紅線，五漏斗更新（2026-10-27）</h2>
+<p>經歷了這兩天 <code>sif.f3.1</code> 連吞兩單觸發保險絲（-$4,481 USD）以及 <code>evoM3.05</code> 單筆直接打穿 -$4,953 USD 的實彈衝擊，這套「研發到實盤」的審核體系必須做出<strong>制度級的重組</strong>。</p>
+<p>過去的教訓非常清晰：歷史長跑指標（WFE、PSR $p$、日 SR）只能證明「它過去不是騙子」，但完全無法預測「它現在有沒有帶病」。</p>
+<p>以下是結合實盤血淚經驗，將「榜單定位」徹底拆分，並在「過審流程」中加入<strong>強制一票否決（不上架）硬指標</strong>的全新框架：</p>
+<hr>
+<h3>一、 榜單定位重塑：徹底拆分「研發資格」與「實盤出賽權」</h3>
+<p>未來所有策略必須嚴格實行「雙證制」，榜單不再一鍋端：</p>
+<div style="margin:6px 0 4px .8em">1. <strong>研發榜（合格庫 / 候選庫）</strong>：</div>
+<div style="margin:4px 0 4px 2em">• <strong>角色</strong>：學歷證書。代表該策略在數學與統計上是真實有效的（通過步進前推、長跨度 Tick 檢驗）。</div>
+<div style="margin:4px 0 4px 2em">• <strong>原則</strong>：進入此榜僅代表「具備觀察資格」，<strong>絕對不等於「可以直接上實盤真打」</strong>。</div>
+<div style="margin:6px 0 4px .8em">2. <strong>出賽榜（Active Live Roster）</strong>：</div>
+<div style="margin:4px 0 4px 2em">• <strong>角色</strong>：賽前即時體檢與出賽名單。</div>
+<div style="margin:4px 0 4px 2em">• <strong>原則</strong>：必須同時滿足「研發硬抗體」與「即時二考動能」，且未觸發任何一票否決條款，才允許分配 MC2 實盤 Slot 與保證金。</div>
+<hr>
+<h3>二、 審核流程調整：引進「五階漸進式漏斗」</h3>
+<p>過去只看 OOS、WFA 與三年三考，現在必須將「即時二考（Databento 延伸盤）」正式制度化為不可逾越的第四道防線：</p>
+<pre style="overflow-x:auto;background:#f3f6f9;padding:10px;font-size:13px">[第 1 階：基礎體質] ──&gt; [第 2 階：統一 WFA] ──&gt; [第 3 階：三考跨週期] ──&gt; [第 4 階：二考即時體檢] ──&gt; [第 5 階：實盤保險絲]
+ (OOS / PF / 筆數)       (WFE ≥0.50 / ≥2窗)        (三年全正/扣極端值)       (30天延伸/動能為正)        (強制熔斷停機)</pre>
+<hr>
+<h3>三、 強制「不上架／一票否決」三大紅線條件</h3>
+<p>只要觸犯以下任一條件，無論其餘數據多漂亮（即使 WFE &gt; 1.0、PSR $p \le 10^{-4}$），<strong>一律強制封存、不得上線（或立即強制下線）</strong>：</p>
+<h4>紅線 1：【即時二考體制失配否決】（防止 sif.f3.1 重演）</h4>
+<div style="margin:4px 0 4px 2em">• <strong>觸發條件</strong>：</div>
+<div style="margin:6px 0 4px .8em">1. 二考（近 30~45 天無縫盤面）<strong>累計淨利為負（Net Profit $&lt; 0$）</strong>。</div>
+<div style="margin:6px 0 4px .8em">2. 二考回撤金額超過其<strong>歷史日 MDD 的 30%</strong>。</div>
+<div style="margin:4px 0 4px 2em">• <strong>處置</strong>：<strong>強制不上架</strong>。近期盤面節奏不契合的策略，絕不允許進場用肉身試水溫。若要重新評估，必須等下一次滾動二考回正。</div>
+<h4>紅線 2：【低頻/孤島樣本詐欺否決】（防止 evoM3.05 重演）</h4>
+<div style="margin:4px 0 4px 2em">• <strong>觸發條件</strong>：</div>
+<div style="margin:6px 0 4px .8em">1. 二考期間<strong>總交易筆數 $&lt; 5$ 筆</strong>（如 M3.05 僅 1 筆、M2.05 僅 1 筆）。</div>
+<div style="margin:6px 0 4px .8em">2. 策略單筆極限停損金額超過其<strong>歷史日 MDD 的 50%</strong>。</div>
+<div style="margin:4px 0 4px 2em">• <strong>處置</strong>：<strong>強制不上架或降級為極小微型口數（0.1 口 MNQ）</strong>。</div>
+<div style="margin:4px 0 4px 2em">• <em>原因</em>：像 M3.05 這種二考僅 1 筆賺 +3.5k 的策略，統計信賴度極低；一旦上線失手一筆就倒賠 -$4,953，直接吃掉全組合半個月利潤。沒有充足樣本驗證的低頻單，不給大口數。</div>
+<h4>紅線 3：【三年跨週期抗體穿倉否決】（防止 fast_sif.f20.2 重演）</h4>
+<div style="margin:4px 0 4px 2em">• <strong>觸發條件</strong>：</div>
+<div style="margin:6px 0 4px .8em">1. 三考（2022～2024 Tick 驗證）<strong>三年總淨利 $\le 0$</strong>（如 fast_sif 累計 -$931）。</div>
+<div style="margin:6px 0 4px .8em">2. 三年三考中，<strong>任一單一自然年虧損超過 $5,000 USD</strong>（如 fast_sif 2024 單年虧 -$7,980）。</div>
+<div style="margin:6px 0 4px .8em">3. 三考去除前 5% 大單後的 <strong>Trim PF $&lt; 1.05$</strong>。</div>
+<div style="margin:4px 0 4px 2em">• <strong>處置</strong>：<strong>永久剔除</strong>。無法跨越牛熊週期的策略，本質只是某個特定行情的套利公式，隨時會爆倉。</div>
+<hr>
+<h3>四、 實盤執行配套：上架後的「動態熔斷保險絲」</h3>
+<p>即便是過審上線的策略，上線後也不再是「無為而治」，必須標配<strong>雙層硬保險絲</strong>：</p>
+<div style="margin:6px 0 4px .8em">1. <strong>單策略專屬熔斷線</strong>：</div>
+<div style="margin:4px 0 4px 2em">• <strong>停機線</strong>：策略自上架日起算，累計回撤超過 <strong>$\min(\text{歷史日 MDD} \times 0.6,\; \$3,500\text{ USD})$</strong> 時，MC2 <strong>強制切換 Live OFF</strong>，不再委託。</div>
+<div style="margin:4px 0 4px 2em">• 這次 <code>sif.f3.1</code> 在 $4,400 處斷電停機，就是實用交易員保住最後 3,000 鎂的關鍵操作。</div>
+<div style="margin:6px 0 4px .8em">2. <strong>單筆防穿倉硬停損（Emergency Hard Stop）</strong>：</div>
+<div style="margin:4px 0 4px 2em">• 任何 NQ 策略的單筆最大容許虧損，<strong>嚴格限制不得超過 $2,000 USD / 口</strong>（以 100 點為警戒）。</div>
+<div style="margin:4px 0 4px 2em">• 絕不能再出現像 <code>M3.05</code> 這種單筆任由虧損漂移到 -$4,953 才平倉的荒謬情形。</div>
+<hr>
+<h3>五、 結論：用這張新濾網檢視當前殘局</h3>
+<p>如果把這套「新過審條件 ＋ 強制不上架紅線」套回到今天的大表上：</p>
+<div style="margin:4px 0 4px 2em">• <strong><code>FOTT.2</code></strong>：二考 +3.5k（17筆）、三考三年全正、WFE 0.86（4窗）$\rightarrow$ <strong>唯一滿分主力（Tier 1）</strong>。</div>
+<div style="margin:4px 0 4px 2em">• <strong><code>evo31_daily.1</code></strong>：二考 +3.2k（12筆）、三考 +6.1萬、WFE 0.54（2窗）$\rightarrow$ <strong>標準過審主力（Tier 1）</strong>。</div>
+<div style="margin:4px 0 4px 2em">• <strong><code>B1.04</code></strong>：二考 +7.4k（53筆大樣本）、三考 +7.4萬、MDD 1萬 $\rightarrow$ <strong>大樣本基石（Tier 1）</strong>。</div>
+<div style="margin:4px 0 4px 2em">• <strong><code>sif.f3.1</code></strong>：觸犯【紅線 1】（二考負利 -2.9k）$\rightarrow$ <strong>強制下架</strong>。</div>
+<div style="margin:4px 0 4px 2em">• <strong><code>M3.05</code></strong>：觸犯【紅線 2】（二考僅 1 筆、單筆停損過大）$\rightarrow$ <strong>強制下架</strong>。</div>
+<div style="margin:4px 0 4px 2em">• <strong><code>fast_sif.f20.2</code></strong>：觸犯【紅線 3】（三考總和為負、2024 大賠）$\rightarrow$ <strong>強制下架</strong>。</div>
+<p>M1.02 的二考是 −683（6 筆），踩到紅線 1。</p>
+<div style="margin:4px 0 4px 2em">• M2.05 的二考只有 1 筆，踩到紅線 2。</div>
+<p>這套制度建立後，未來的榜單不會再讓你感到精神分裂——<strong>「二考不過的不准碰，低頻樣本不足的不能重倉，長跑穿倉的直接殺」</strong>。把篩選防線前移，實盤才能真正睡得著覺。</p>
 <h2>七寶（sif.f3.1 熔斷下架，八寶→七寶）</h2>
 <img src="assets/overlap/seven_b_board_20261027c.png?v=20261027c" alt="七寶榜單 2026-10-27">
 <img src="assets/overlap/seven_b_corr_20261027.png?v=20261027a" alt="7策 相關性">
