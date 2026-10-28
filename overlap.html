@@ -1,6 +1,22 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>重疊分析</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a></div>
 <h1>重疊分析</h1>
+<h2>四寶（4策略配置＋9停用對照＋2候選，2026-10-28）</h2>
+<img src="assets/overlap/four_b_board_20261028.png?v=20261028a" alt="四寶榜單 2026-10-28">
+<img src="assets/overlap/four_b_corr_20261028.png?v=20261028a" alt="四寶 相關性 2026-10-28">
+<img src="assets/overlap/four_b_cum_20261028.png?v=20261028a" alt="四寶 損益疊加曲線 2026-10-28">
+<p>四寶榜單與分析已完成。P3v2_B3.02列策7，明確標註「Charles指定PSR特例」，保留原PSR數字，不改成一般過審。本次未操作MC2。</p>
+<p>三寶 → 四寶：損益變化</p>
+<table><tr><th>期間</th><th>每方向上限</th><th>三寶淨利 → 四寶淨利</th><th>增量</th><th>日結MDD變化</th></tr><tr><td>原OOS</td><td>1口</td><td>$195,454 → $226,150</td><td>+$30,696</td><td>$17,475 → $16,993</td></tr><tr><td>原OOS</td><td>2口</td><td>$229,791 → $258,759</td><td>+$28,968</td><td>$19,052 → $14,546</td></tr><tr><td>二考</td><td>1口</td><td>$13,064 → $19,075</td><td>+$6,011</td><td>$10,816 → $10,816</td></tr><tr><td>二考</td><td>2口</td><td>$18,403 → $26,408</td><td>+$8,005</td><td>$10,304 → $10,304</td></tr></table>
+<p>這段歷史中，加入它確實提高組合淨利；共用兩口的原OOS回撤也降低。</p>
+<p>跳過分析</p>
+<table><tr><th>期間／限制</th><th>四寶總接納／跳過</th><th>P3v2_B3.02接納／跳過</th><th>P3接納淨利</th><th>P3被跳過淨利</th></tr><tr><td>原OOS・1口</td><td>780／184筆</td><td>56／6筆</td><td>$28,722</td><td>−$7,833</td></tr><tr><td>原OOS・2口</td><td>947／17筆</td><td>60／2筆</td><td>$26,735</td><td>−$5,846</td></tr><tr><td>二考・1口</td><td>70／17筆</td><td>4／1筆</td><td>$6,688</td><td>+$1,317</td></tr><tr><td>二考・2口</td><td>84／3筆</td><td>5／0筆</td><td>$8,005</td><td>$0</td></tr></table>
+<p>負的「被跳過淨利」代表避開虧損。原OOS兩口的 +$28,968 增益，包含P3接納淨利 $26,735，以及額外擋掉evo31一筆 −$2,233。因此，增益並非全部來自新策略本身。</p>
+<p>相關性與重疊</p>
+<p>P3v2_B3.02與原三寶的不限倉日損益相關係數：</p>
+<table><tr><th>對照策略</th><th>原OOS</th><th>二考</th></tr><tr><td>FOTT.2</td><td>0.274</td><td>−0.191</td></tr><tr><td>evo31_daily.1</td><td>−0.042</td><td>−0.453</td></tr><tr><td>B1.04</td><td>0.109</td><td>0.107</td></tr></table>
+<p>原OOS的62筆中，分別有 11筆、6筆、12筆與上述策略同向持倉重疊；筆數不能跨列相加。二考僅5筆，不能把負相關視為穩定避險能力。</p>
+<p>計算沿既有凍結逐筆、各1口NQ、原成本及研究C4/C5，按策1→2→6→7處理同時進場，拒單不排隊。未套用新緊急停損或實盤熔斷，不含浮動回撤。 FOTT.2二考來源標籤仍有前述衝突，因此本次保持原三寶基準逐筆，不宣稱整組已重新核實為純Bento。</p>
 <h2>三寶（3支 Live ON｜9支停用／下架對照＋3候選，2026-10-27）</h2>
 <img src="assets/overlap/three_b_board_20261028.png?v=20261028a" alt="三寶榜單 2026-10-28">
 <img src="assets/overlap/three_b_corr_20261027.png?v=20261027a" alt="三寶 相關性 2026-10-27">
