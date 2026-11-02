@@ -1,6 +1,23 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>重疊分析</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a></div>
 <h1>重疊分析</h1>
+<h2>五寶（四寶＋evo4x.slice01.1 預計加入，2026-11-02）</h2>
+<img src="assets/overlap/five_b_board_20261102.png?v=20261102a" alt="五寶榜單 2026-11-02">
+<img src="assets/overlap/five_b_corr_20261102.png?v=20261102a" alt="五寶 相關性 2026-11-02">
+<img src="assets/overlap/five_b_cum_20261102.png?v=20261102a" alt="五寶 損益疊加曲線 2026-11-02">
+<p>五策略情境完成。加入 evo4x.slice01.1 後，共用兩口的原OOS、二考都增加淨利，日結MDD小幅下降。 目前標示為預計加入，未變更實單。</p>
+<p>先釐清期間：新策略全段OOS是 129筆／+$30,303；切齊四寶的377日後是 117筆／+$31,994。二考則是 9筆／+$1,003。</p>
+<p>四寶 → 五策略</p>
+<table><tr><th>期間</th><th>每方向上限</th><th>四寶淨利 → 五策略淨利</th><th>增量</th><th>日結MDD變化</th></tr><tr><td>原OOS</td><td>1口</td><td>$226,150 → $247,619</td><td>+$21,469</td><td>$16,993 → $18,373</td></tr><tr><td>原OOS</td><td>2口</td><td>$258,759 → $288,526</td><td>+$29,767</td><td>$14,546 → $13,946</td></tr><tr><td>二考</td><td>1口</td><td>$19,075 → $20,864</td><td>+$1,789</td><td>$10,816 → $10,249</td></tr><tr><td>二考</td><td>2口</td><td>$26,408 → $27,411</td><td>+$1,003</td><td>$10,304 → $9,737</td></tr></table>
+<p>跳過分析</p>
+<table><tr><th>期間／限制</th><th>全組接納／跳過</th><th>新策略接納／跳過</th><th>新策略接納淨利</th><th>新策略被跳過淨利</th></tr><tr><td>原OOS・1口</td><td>872／209筆</td><td>98／19筆</td><td>$25,071</td><td>+$6,923</td></tr><tr><td>原OOS・2口</td><td>1,058／23筆</td><td>112／5筆</td><td>$31,174</td><td>+$820</td></tr><tr><td>二考・1口</td><td>77／19筆</td><td>8／1筆</td><td>$2,026</td><td>−$1,023</td></tr><tr><td>二考・2口</td><td>93／3筆</td><td>9／0筆</td><td>$1,003</td><td>$0</td></tr></table>
+<p>共用兩口時：</p>
+<ul><li>原OOS新策略接納率 95.7%。它貢獻$31,174，但對既有四寶的接納影響合計 −$1,407，所以組合實增$29,767。</li><li>二考9筆全部接納，既有四寶接納結果不變，完整增加$1,003。</li></ul>
+<p>被跳過淨利為正代表少賺，負值代表避開虧損。完整逐策略跳過明細</p>
+<p>相關性</p>
+<p>新策略與四寶的原始日損益Pearson相關係數：</p>
+<table><tr><th>對照策略</th><th>原OOS・377日</th><th>二考・25日</th></tr><tr><td>FOTT.2</td><td>0.005</td><td>−0.443</td></tr><tr><td>evo31_daily.1</td><td>−0.010</td><td>0.046</td></tr><tr><td>B1.04</td><td>−0.033</td><td>−0.142</td></tr><tr><td>P3v2_B3.02</td><td>0.036</td><td>0.069</td></tr></table>
+<p>原OOS的相關性都接近零，歷史上有分散效果。 二考與FOTT.2的負相關較明顯，但新策略只有9筆，不能據此認定長期能避險。</p>
 <h2>四寶（4策略配置＋9停用對照＋2候選，2026-10-28）</h2>
 <img src="assets/overlap/four_b_board_20261028.png?v=20261028a" alt="四寶榜單 2026-10-28">
 <img src="assets/overlap/four_b_corr_20261028.png?v=20261028a" alt="四寶 相關性 2026-10-28">
