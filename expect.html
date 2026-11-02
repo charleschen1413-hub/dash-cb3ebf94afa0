@@ -1,20 +1,20 @@
-<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>四正式+三特例 期望值</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>四正式+三特例 期望值</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}blockquote{border-left:4px solid #becddb;margin:8px 0;padding:4px 12px;color:#35576f}td{text-align:left;vertical-align:top}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a>｜<a href="expect.html">四正式+三特例 期望值</a></div>
 <h1>四正式+三特例 期望值</h1>
 <img src="assets/expect/four_three_expect_20261102.png" alt="4正式3特例">
 <p>針對這張最新整合的「4 正式 ＋ 3 特例」七支策略陣容，我們直接排除紙面回測的樂觀幻覺，用最嚴格的機構級計量方法來計算未來三個月（1 個季度，約 63 個交易日）的期望淨利。</p>
 <h2>一、 期望值計算基準與「三道現實折扣」</h2>
 <p>不能直接拿「OOS 總淨利 ÷ 6」來當未來一季的期望值，因為那包含了前 5% 的極端肥尾暴利單。要算出實盤真正拿得到的期望值，必須依序套用以下三個基準：</p>
-<ol><li>時間換算基準：原 OOS 期間為 377 個交易日，未來三個月（1 季）以 63 個交易日計，時間縮放係數為 63 ÷ 377 ≈ 0.1671（約為 OOS 總交易筆數的 1/6）。</li>
+<ol><li>時間換算基準：原 OOS 期間為 377 個交易日，未來三個月（1 季）以 63 個交易日計，時間縮放係數為 $63 \div 377 \approx \mathbf{0.1671}$（約為 OOS 總交易筆數的 $1/6$）。</li>
 <li>第一重折扣（去肥尾基準）：全面改採表上的 「Trim 期望（去除極端大單後之每筆期望值）」 乘以預估季筆數，作為無暴利運氣加持下的「去極端值基準期望」。</li>
-<li>第二重折扣（實盤微結構與體質衰減係數）：<ol><li>依據各策略在 Micro-WFE（推進保留率）、是否偷看 OOS、是否超標高原中心度（均值回歸風險） 以及 樣本顯著性（PSR p），給予 0.40 ～ 0.80 的實戰保留率折算。</li></ol></li></ol>
+<li>第二重折扣（實盤微結構與體質衰減係數）：<ul><li>依據各策略在 Micro-WFE（推進保留率）、是否偷看 OOS、是否超標高原中心度（均值回歸風險） 以及 樣本顯著性（PSR $p$），給予 0.40 ～ 0.80 的實戰保留率折算。</li></ul></li></ol>
 <h2>二、 「4 正式 ＋ 3 特例」未來三個月（1 季）期望值明細表</h2>
 <h3>【第一梯隊：4 支正式主力】</h3>
-<p>包含舊制三本柱（ FOTT.2 、 evo31_daily.1 ）、新制大樣本主力（ B1.04 ）與剛滿分過審的 evo4x.slice01.1 。</p>
-<table><tr><th>策略代號</th><th>分類與定位</th><th>預估季筆數(OOS筆數 ×0.167)</th><th>OOS 帳面季覺)</th></tr><tr><td>FOTT.2</td><td>正式 1<br>舊制真高原旗艦</td><td>30.1 筆<br>(180筆/6)</td><td>+$12,798</td></tr><tr><td>evo31_daily.1</td><td>正式 2<br>舊制留校察看($4k保險絲)</td><td>38.1 筆<br>(228筆/6)</td><td>+$14,303</td></tr><tr><td>B1.04</td><td>正式 3<br>新制高頻基石</td><td>82.6 筆<br>(494筆/6)</td><td>+$11,364</td></tr><tr><td>evo4x.slice01.1</td><td>正式 4<br>Phase4 滿分過審</td><td>21.6 筆<br>(129筆/6)</td><td>+$5,064</td></tr><tr><td>【4 正式合計】</td><td>—</td><td>約 172 筆 / 季</td><td>+$43,529</td></tr></table>
+<blockquote>包含舊制三本柱（FOTT.2、evo31_daily.1）、新制大樣本主力（B1.04）與剛滿分過審的 evo4x.slice01.1。</blockquote>
+<table><tr><th>策略代號</th><th>分類與定位</th><th>預估季筆數(OOS筆數×0.167)</th><th>OOS 帳面季均(未折算幻覺)</th><th>去肥尾基準(季筆數×Trim期望)</th><th>實戰折扣係數与依據</th><th>未來 3 個月實戰期望值(保守 ～ 基準區間)</th></tr><tr><td>FOTT.2</td><td>正式 1<br>舊制真高原旗艦</td><td>30.1 筆<br>(180筆/6)</td><td>+$12,798</td><td>+$9,054<br>($301/筆)</td><td>0.75（Micro-WFE 0.521 穩健、三考 Trim PF 1.60 極強）</td><td>+$6,800 ～ +$9,000</td></tr><tr><td>evo31_daily.1</td><td>正式 2<br>舊制留校察看($4k保險絲)</td><td>38.1 筆<br>(228筆/6)</td><td>+$14,303</td><td>+$8,420<br>($221/筆)</td><td>0.45（OOS 參與選種，Micro-WFE 僅 0.314，前推衰減 68.6%）</td><td>+$3,800 ～ +$5,000</td></tr><tr><td>B1.04</td><td>正式 3<br>新制高頻基石</td><td>82.6 筆<br>(494筆/6)</td><td>+$11,364</td><td>+$7,513<br>($91/筆)</td><td>0.75（樣本最厚、二考 53 筆賺 +$7.4k、週勝率 73.5%）</td><td>+$5,600 ～ +$7,500</td></tr><tr><td>evo4x.slice01.1</td><td>正式 4<br>Phase4 滿分過審</td><td>21.6 筆<br>(129筆/6)</td><td>+$5,064</td><td>+$3,600<br>($167/筆)</td><td>0.80（Micro-WFE 高達 0.800、中心度 +0.11$\sigma$ 完美置中）</td><td>+$2,900 ～ +$3,600</td></tr><tr><td>【4 正式合計】</td><td>—</td><td>約 172 筆 / 季</td><td>+$43,529</td><td>+$28,587</td><td>綜合加權保留率約 67%</td><td>+$19,100 ～ +$25,100</td></tr></table>
 <h3>【第二梯隊：3 支特例策略】</h3>
-<p>分別對應你指出的三項瑕疵：高原中心度不過（ evo4t.slice01.1 ）、二考筆數不夠（ P3v2_M3.02 ）、PSR/DSR p 不過（ P3v2_B3.02 ）。</p>
-<table><tr><th>策略代號</th><th>特例瑕疵原因</th><th>預估季筆數(OOS筆數 ×0.167)</th><th>OOS 帳面季覺)</th></tr><tr><td>evo4t.slice01.1</td><td>特例 1：高原中心度不過<br>(+1.46$\sigma$ 超標 ±1.0σ)</td><td>25.6 筆<br>(153筆/6)</td><td>+$8,450</td></tr><tr><td>P3v2_M3.02</td><td>特例 2：筆數不夠 + PSR不過<br>(二考僅3筆 / PSR p 0.056)</td><td>7.2 筆<br>(43筆/6)</td><td>+$4,295</td></tr><tr><td>P3v2_B3.02</td><td>特例 3：PSR / DSR p 不過<br>(PSR p 0.119 &gt; 0.01)</td><td>10.4 筆<br>(62筆/6)</td><td>+$3,490</td></tr><tr><td>【3 特例合計】</td><td>—</td><td>約 43 筆 / 季</td><td>+$16,235</td></tr></table>
+<blockquote>分別對應你指出的三項瑕疵：高原中心度不過（evo4t.slice01.1）、二考筆數不夠（P3v2_M3.02）、PSR/DSR $p$ 不過（P3v2_B3.02）。</blockquote>
+<table><tr><th>策略代號</th><th>特例瑕疵原因</th><th>預估季筆數(OOS筆數×0.167)</th><th>OOS 帳面季均(未折算幻覺)</th><th>去肥尾基準(季筆數×Trim期望)</th><th>實戰折扣係數與懲罰依據</th><th>未來 3 個月實戰期望值(保守 ～ 基準區間)</th></tr><tr><td>evo4t.slice01.1</td><td>特例 1：高原中心度不過<br>(+1.46$\sigma$ 超標 $\pm 1.0\sigma$)</td><td>25.6 筆<br>(153筆/6)</td><td>+$8,450</td><td>+$6,903<br>($270/筆)</td><td>0.55（SR 3.41 屬高原尖峰特優生，上線必遭遇均值回歸打折；但 Micro-WFE 0.613 底子好）</td><td>+$3,800 ～ +$5,200</td></tr><tr><td>P3v2_M3.02</td><td>特例 2：筆數不夠 + PSR不過<br>(二考僅3筆 / PSR $p$ 0.056)</td><td>7.2 筆<br>(43筆/6)</td><td>+$4,295</td><td>+$1,990<br>($277/筆)</td><td>0.45（極低頻每季僅 7 筆，PSR &gt; 0.05 統計顯著性不足，變異極大）</td><td>+$900 ～ +$1,800<br>(單季極易出現負值)</td></tr><tr><td>P3v2_B3.02</td><td>特例 3：PSR / DSR $p$ 不過<br>(PSR $p$ 0.119 &gt; 0.01)</td><td>10.4 筆<br>(62筆/6)</td><td>+$3,490</td><td>+$2,103<br>($203/筆)</td><td>0.50（週勝率 78.6%、二考 5 筆全勝，但 PSR 0.119 噪音偏高、低頻每季僅 10 筆）</td><td>+$1,050 ～ +$1,900</td></tr><tr><td>【3 特例合計】</td><td>—</td><td>約 43 筆 / 季</td><td>+$16,235</td><td>+$10,996</td><td>綜合加權保留率約 52%</td><td>+$5,750 ～ +$8,900</td></tr></table>
 <h2>三、 組合總體檢：未來三個月（1 季）你能期待多少獲利？要承受多大風險？</h2>
 <p>把這「4 正式 ＋ 3 特例」合組為一個 7 策略投資組合時，未來三個月的立體財務預測如下：</p>
 <h3>1. 總獲利期望值（3 個月 / 1 季）</h3>
@@ -23,14 +23,12 @@
 <li>機構級實戰保守期望（扣除均值回歸與推進衰減後）：<ul><li>僅跑「4 正式」：未來三個月期望淨利約為 +$19,100 ～ +$25,100 USD（月均約 +$6,300 ～ +$8,300 USD）。</li><li>加掛「3 特例」（全開 7 支）：未來三個月期望淨利約為 +$24,850 ～ +$34,000 USD（月均約 +$8,200 ～ +$11,300 USD）。</li></ul></li></ul>
 <h3>2. 為什麼 P3v2_M3.02 與 P3v2_B3.02 兩支特例對總期望值的貢獻這麼小？</h3>
 <p>看表格的「預估季筆數」就一目了然：</p>
-<ul><li>B1.04 一季會打 83 筆交易， FOTT.2 打 30 筆， evo31 打 38 筆；</li>
+<ul><li>B1.04 一季會打 83 筆交易，FOTT.2 打 30 筆，evo31 打 38 筆；</li>
 <li>而 P3v2_M3.02 與 P3v2_B3.02 因為是低頻策略，一整季（3 個月）下來各自只會出手 7 筆與 10 筆！</li>
 <li>在去除了前 5% 暴利單（Trim 期望僅 $277 與 $203）並打完 5 折衰減後，這兩支低頻特例忙了一整季（3 個月）其實只幫整個組合多添了約 +$2,000 ～ +$3,700 USD 的期望值，但你卻要為它們兩支多扛 日 MDD $12,221 與 $12,414（合計近 2.5 萬美金） 的潛在尾端風險！</li></ul>
 <h3>3. 給你的實盤資金配置建議（CP 值權衡）</h3>
-<ol><li>最高夏普比配置（4 正式 ＋ 1 特例 evo4t.slice01.1 ）：<ol><li>3 支特例裡面，真正有肉、單筆風險又極小的是 evo4t.slice01.1 （一季 26 筆、去肥尾期望近 7,000、單筆最大虧損僅 -$4,048、日 MDD 僅 $6,357）。它雖然中心度 +1.46\sigma$ 超標，就算打 55 折均值回歸，一季還是能貢獻 +$3,800 ～ +$5,200 USD。</li>
-<li>注意： evo4x.slice01.1 與 evo4t.slice01.1 同屬 Phase 4 Slice 01（小字註明 OOS 非獨立），若兩支同時上線，建議將這兩支視為「同一個母槽位的分拆」，共用一個 $7,000 USD 的家族總停機保險絲。</li></ol></li>
-<li>針對低頻雙特例（ P3v2_M3.02 與 P3v2_B3.02 ）：<ol><li>因為你已經把 P3v2_B3.02 指定上架為 策 7[cite: 3]，建議對這類「一季只出手 7～10 筆、期望貢獻佔總體不到 10%、但日 MDD 破 $12,000」的低頻特例，在 MC2 上將停機保險絲嚴格鎖在 -$5,000 ～ -$6,000 USD（約為其單筆最大虧損 -$6,013 的水位）。只要第一筆或前兩筆運氣不好撞上大停損，就讓它自動斷電休息，不要讓低頻策略拖累前面 4 支高頻/中頻正式主力辛苦賺來的利潤。</li></ol></li></ol>
-<p>要不要針對已經掛上「策 7」的 P3v2_B3.02 與新核定的 evo4x.slice01.1 ，一起定出它們在 MC2 上的精確停機保險絲金額？ Tell me how you want to set the limits!</p>
-<h2>PDF 原檔</h2>
-<p><a href="assets/expect/four_three_expect_20261102.pdf">下載 PDF（4 頁）</a></p>
-<img src="assets/expect/pdf_page-1.png" alt="PDF 第1頁"><img src="assets/expect/pdf_page-2.png" alt="PDF 第2頁"><img src="assets/expect/pdf_page-3.png" alt="PDF 第3頁"><img src="assets/expect/pdf_page-4.png" alt="PDF 第4頁"></html>
+<ol><li>最高夏普比配置（4 正式 ＋ 1 特例 evo4t.slice01.1）：<ul><li>3 支特例裡面，真正有肉、單筆風險又極小的是 evo4t.slice01.1（一季 26 筆、去肥尾期望近 $7,000、單筆最大虧損僅 -$4,048、日 MDD 僅 $6,357）[cite: 3]。它雖然中心度 +1.46$\sigma$ 超標，就算打 55 折均值回歸，一季還是能貢獻 +$3,800 ～ +$5,200 USD。</li>
+<li>注意：evo4x.slice01.1 與 evo4t.slice01.1 同屬 Phase 4 Slice 01（小字註明 OOS 非獨立），若兩支同時上線，建議將這兩支視為「同一個母槽位的分拆」，共用一個 $7,000 USD 的家族總停機保險絲。</li></ul></li>
+<li>針對低頻雙特例（P3v2_M3.02 與 P3v2_B3.02）：<ul><li>因為你已經把 P3v2_B3.02 指定上架為 策 7[cite: 3]，建議對這類「一季只出手 7～10 筆、期望貢獻佔總體不到 10%、但日 MDD 破 $12,000」的低頻特例，在 MC2 上將停機保險絲嚴格鎖在 -$5,000 ～ -$6,000 USD（約為其單筆最大虧損 -$6,013 的水位）。只要第一筆或前兩筆運氣不好撞上大停損，就讓它自動斷電休息，不要讓低頻策略拖累前面 4 支高頻/中頻正式主力辛苦賺來的利潤。</li></ul></li></ol>
+<p>要不要針對已經掛上「策 7」的 P3v2_B3.02 與新核定的 evo4x.slice01.1，一起定出它們在 MC2 上的精確停機保險絲金額？ Tell me how you want to set the limits!</p>
+</html>
