@@ -1,6 +1,20 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>重疊分析</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a>｜<a href="expect.html">四正式+三特例 期望值</a></div>
 <h1>重疊分析</h1>
+<h2>八策略（新增 p4r96.slice02.5）</h2>
+<img src="assets/overlap/eight_corr_20261105.png?v=20261105a" alt="八策略 相關性 2026-11-05">
+<img src="assets/overlap/eight_cum_20261105.png?v=20261105a" alt="八策略 損益比較 2026-11-05">
+<img src="assets/overlap/eight_board_20261105.png?v=20261105a" alt="slice01榜與三考榜單 2026-11-05">
+<p>八策略分析完成。<code>p4r96.slice02.5</code> 與原七支低相關；共用2口時提高兩個期間的淨利，但原OOS回撤稍增。</p>
+<p>採用R3完整逐筆，切齊共同377交易日後，新策略為 134筆／+$41,333；二考為 8筆／+$3,971。</p>
+<table><tr><th>期間／每方向上限</th><th>七策略 → 八策略淨利</th><th>增量</th><th>日結MDD變化</th></tr><tr><td>原OOS／1口</td><td>$268,057 → $288,762</td><td>+$20,705</td><td>$18,079 → $16,054</td></tr><tr><td>原OOS／2口</td><td>$349,509 → $381,516</td><td>+$32,007</td><td>$14,705 → $16,554</td></tr><tr><td>二考／1口</td><td>$25,937 → $25,732</td><td>−$205</td><td>$7,239 → $5,828</td></tr><tr><td>二考／2口</td><td>$40,471 → $43,710</td><td>+$3,239</td><td>$5,628 → $4,217</td></tr></table>
+<p>新策略與原七支的原始日損益相關係數介於 −0.058～0.118，沒有明顯高度相關對象。原有 evo4x／evo4t 的相關仍較高，為 0.676。</p>
+<p>跳過分析：新策略自己的獲利，不等於組合增加的獲利。</p>
+<table><tr><th>期間／上限</th><th>新策略接納／跳過</th><th>新策略接納淨利</th><th>原七支淨利受影響</th><th>組合淨增</th></tr><tr><td>原OOS／1口</td><td>108／26筆</td><td>+$41,266</td><td>−$20,561</td><td>+$20,705</td></tr><tr><td>原OOS／2口</td><td>126／8筆</td><td>+$40,197</td><td>−$8,190</td><td>+$32,007</td></tr><tr><td>二考／1口</td><td>8／0筆</td><td>+$3,971</td><td>−$4,176</td><td>−$205</td></tr><tr><td>二考／2口</td><td>8／0筆</td><td>+$3,971</td><td>−$732</td><td>+$3,239</td></tr></table>
+<p>即使新策略優先序最後，它較早進場後仍會占用名額，擋住後來的其他策略訊號。這就是二考1口沒有增加獲利的原因。</p>
+<p>八策略的歷史交易頻率：</p>
+<table><tr><th>期間</th><th>每方向1口：日均／週均</th><th>每方向2口：日均／週均</th></tr><tr><td>原OOS</td><td>2.58／12.88筆</td><td>3.46／17.28筆</td></tr><tr><td>二考</td><td>3.44／17.20筆</td><td>4.40／22.00筆</td></tr></table>
+<p>週均按5交易日換算，一次完整進出算1筆。以上為歷史接納模擬，保留原C4/C5退出，未套新增實盤熔斷；MDD不含浮動虧損。二考仍沿用先前資料，FOTT.2的Bento／混源標註衝突尚未釐清。</p>
 <h2>七策略（新增 P3v2_B3.02、evo4t.slice01.1）</h2>
 <img src="assets/overlap/seven_corr_20261102.png?v=20261102a" alt="七策略 相關性 2026-11-02">
 <img src="assets/overlap/seven_cum_20261102.png?v=20261102a" alt="七策略 損益比較 2026-11-02">
