@@ -1,6 +1,34 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>重疊分析</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a>｜<a href="expect.html">四正式+三特例 期望值</a></div>
 <h1>重疊分析</h1>
+<h2>五策略（2026-11-09 現行名單：策1、3、6、7、10）</h2>
+<img src="assets/overlap/five_corr_20261109.png?v=20261109a" alt="五策略 相關性 2026-11-09">
+<img src="assets/overlap/five_cum_20261109.png?v=20261109a" alt="五策略 損益比較 2026-11-09">
+<p>目前五支彼此低相關，共用2口的重疊損失不大。 已按實際槽位 1、3、6、7、10 重算，沒有把下架策略算入。</p>
+<table><tr><th>期間</th><th>每方向上限</th><th>組合淨利</th><th>日結MDD</th><th>接納／跳過</th></tr>
+<tr><td>原OOS：377日</td><td>不限倉</td><td>$243,626</td><td>$13,243</td><td>968／0筆</td></tr>
+<tr><td>原OOS：377日</td><td>1口</td><td>$216,077</td><td>$10,213</td><td>791／177筆</td></tr>
+<tr><td>原OOS：377日</td><td>2口</td><td>$237,804</td><td>$11,594</td><td>942／26筆</td></tr>
+<tr><td>二考：25日</td><td>不限倉</td><td>$21,140</td><td>$5,316</td><td>90／0筆</td></tr>
+<tr><td>二考：25日</td><td>1口</td><td>$18,888</td><td>$5,828</td><td>79／11筆</td></tr>
+<tr><td>二考：25日</td><td>2口</td><td>$24,213</td><td>$5,316</td><td>89／1筆</td></tr>
+</table>
+<p>原OOS兩兩相關係數介於 −0.100～0.118；最高是 FOTT.2 與 p4r96 的 0.118。這表示歷史每日損益連動低，但不代表未來不會同時虧損。</p>
+<p>共用2口的原OOS跳過明細：</p>
+<table><tr><th>策略</th><th>原筆數</th><th>接納</th><th>跳過</th><th>接納淨利</th><th>跳過交易淨利</th></tr>
+<tr><td>FOTT.2</td><td>180</td><td>175</td><td>5</td><td>$72,060</td><td>+$4,525</td></tr>
+<tr><td>evo4x.slice01.1</td><td>117</td><td>113</td><td>4</td><td>$31,661</td><td>+$333</td></tr>
+<tr><td>B1.04</td><td>494</td><td>482</td><td>12</td><td>$68,784</td><td>−$776</td></tr>
+<tr><td>P3v2_M3.02</td><td>43</td><td>42</td><td>1</td><td>$26,209</td><td>−$503</td></tr>
+<tr><td>p4r96.slice02.5</td><td>134</td><td>130</td><td>4</td><td>$39,090</td><td>+$2,243</td></tr>
+<tr><td>合計</td><td>968</td><td>942</td><td>26</td><td>$237,804</td><td>+$5,822</td></tr>
+</table>
+<p>跳過淨利為正代表少賺，為負代表避開虧損。二考2口僅跳過 FOTT.2 一筆 −$3,073，因此結果反而高於不限倉；不能假設未來也會剛好避開虧損單。</p>
+<p>這次比較的重點：</p>
+<ul><li>2口相較1口：原OOS多賺 $21,727，日結MDD增加 $1,381；只跳過全部交易的 2.7%。</li>
+<li>八支縮成五支並非回撤全面降低：2口原OOS MDD由 $16,554 降至 $11,594；二考卻由 $4,217 升至 $5,316。</li>
+<li>交易頻率：2口原OOS約 每日2.50筆／每週12.49筆；二考約 每日3.56筆／每週17.80筆。週均按5交易日換算。</li></ul>
+<p>以上沿用凍結逐筆與C4/C5，未套用你目前五支的實盤回撤保險絲；MDD不含浮動虧損。二考只到10/16，且 FOTT.2 的Bento／混源標註衝突仍待釐清，不能視為截至11/9的即時體檢。</p>
 <h2>八策略（新增 p4r96.slice02.5）</h2>
 <img src="assets/overlap/eight_corr_20261105.png?v=20261105a" alt="八策略 相關性 2026-11-05">
 <img src="assets/overlap/eight_cum_20261105.png?v=20261105a" alt="八策略 損益比較 2026-11-05">
