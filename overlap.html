@@ -1,6 +1,32 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>重疊分析</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a>｜<a href="expect.html">四正式+三特例 期望值</a></div>
 <h1>重疊分析</h1>
+<h2>六策略（2026-11-17 現行名單：策1、2、3、6、7、10）</h2>
+<img src="assets/overlap/six_corr_20261117.png?v=20261117a" alt="六策略原OOS日淨損益 Pearson 相關性 2026-11-17">
+<img src="assets/overlap/six_cum_20261117.png?v=20261117a" alt="五策略→六策略 共用1口/2口損益比較 2026-11-17">
+<p><b>六策略已重算，新增策2 <code>p4r96.slice19.1</code>。它與原五支低相關、提高共用2口的歷史淨利，但兩個期間的日結回撤都增加。</b></p>
+<p>slice19原研究為335筆／+$126,620；切齊共同377交易日後，本次使用 <b>299筆／+$128,873</b>。二考為21筆／+$3,012，期間仍到10/16。</p>
+<table><tr><th>期間／每方向上限</th><th>五策略 → 六策略淨利</th><th>增量</th><th>日結MDD變化</th></tr>
+<tr><td>原OOS／1口</td><td>$216,077 → $272,350</td><td><b>+$56,273</b></td><td>$10,213 → $14,637</td></tr>
+<tr><td>原OOS／2口</td><td>$237,804 → $365,886</td><td><b>+$128,082</b></td><td>$11,594 → $13,831</td></tr>
+<tr><td>二考／1口</td><td>$18,888 → $15,124</td><td><b>−$3,764</b></td><td>$5,828 → $10,143</td></tr>
+<tr><td>二考／2口</td><td>$24,213 → $27,736</td><td><b>+$3,523</b></td><td>$5,316 → $7,869</td></tr>
+</table>
+<p><b>相關性：</b>slice19與原五支介於 <b>−0.018～0.134</b>，最高是與 evo4x 的0.134；與同系列 slice02.5 僅0.057。沒有明顯高度相關對象。</p>
+<p><b>重疊與跳過：</b></p>
+<table><tr><th>期間／上限</th><th>六策略接納／跳過</th><th>slice19接納／跳過</th><th>slice19接納淨利</th><th>對原五支淨利的影響</th></tr>
+<tr><td>原OOS／1口</td><td>1,000／267筆</td><td>259／40筆</td><td>+$102,153</td><td>−$45,880</td></tr>
+<tr><td>原OOS／2口</td><td>1,223／44筆</td><td>297／2筆</td><td>+$128,894</td><td>−$812</td></tr>
+<tr><td>二考／1口</td><td>87／24筆</td><td>15／6筆</td><td>+$740</td><td>−$4,504</td></tr>
+<tr><td>二考／2口</td><td>108／3筆</td><td>21／0筆</td><td>+$3,012</td><td>+$511</td></tr>
+</table>
+<p>在這批歷史樣本裡，<b>2口幾乎完整保留slice19的交易；1口則明顯擠壓其他策略</b>。二考1口的結果尤其不利，不能只看slice19單支是正利。</p>
+<p>六策略交易頻率：</p>
+<table><tr><th>期間</th><th>1口：日均／週均</th><th>2口：日均／週均</th></tr>
+<tr><td>原OOS</td><td>2.65／13.26筆</td><td><b>3.24／16.22筆</b></td></tr>
+<tr><td>二考</td><td>3.48／17.40筆</td><td><b>4.32／21.60筆</b></td></tr>
+</table>
+<p>週均按5交易日，一次完整進出算1筆。這是依槽位 <b>1、2、3、6、7、10</b> 排序的歷史接納模擬，保留原C4/C5退出，<b>未套現行實盤保險絲，MDD不含浮動虧損</b>。FOTT.2二考來源標註衝突仍待釐清，也未加入10/16之後的交易。</p>
 <h2>五策略（2026-11-09 現行名單：策1、3、6、7、10）</h2>
 <img src="assets/overlap/five_corr_20261109.png?v=20261109a" alt="五策略 相關性 2026-11-09">
 <img src="assets/overlap/five_cum_20261109.png?v=20261109a" alt="五策略 損益比較 2026-11-09">
