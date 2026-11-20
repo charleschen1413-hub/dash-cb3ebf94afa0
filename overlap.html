@@ -1,6 +1,26 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>重疊分析</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}.tblscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:8px 0 16px}.tblscroll table{margin:0}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a>｜<a href="expect.html">四正式+三特例 期望值</a></div>
 <h1>重疊分析</h1>
+<h2>六策略（2026-11-20，排除 p4r96.slice19.1）</h2>
+<img src="assets/overlap/six_remove_s19_cum_20261120.png?v=20261120a" alt="七策略 → 移除 p4r96.slice19.1：六策略">
+<img src="assets/overlap/six_remove_s19_corr_20261120.png?v=20261120a" alt="六策略原OOS日淨損益 Pearson 相關性（排除 p4r96.slice19.1）">
+<p>移除前七支 → 移除後六支：</p>
+<div class="tblscroll"><table><tr><th>期間</th><th>每方向上限</th><th>淨利變化 USD</th><th>日結 MDD 變化 USD</th></tr>
+<tr><td>原 OOS</td><td>1口</td><td>293,135 → 240,819</td><td>13,328 → 12,842</td></tr>
+<tr><td>原 OOS</td><td>2口</td><td>397,866 → 269,784</td><td>13,884 → 12,611</td></tr>
+<tr><td>二考</td><td>1口</td><td>19,356 → 23,120</td><td>9,010 → 4,695</td></tr>
+<tr><td>二考</td><td>2口</td><td>32,394 → 28,871</td><td>6,117 → 3,564</td></tr>
+</table></div>
+<p>共用2口下，原 OOS 少賺 $128,082，回撤僅降低 $1,273；二考則少賺 $3,523、回撤降低 $2,553。因此歷史結果呈現取捨，不能說移除後全面改善。</p>
+<p>六支跳過與交易頻率：</p>
+<div class="tblscroll"><table><tr><th>期間</th><th>上限</th><th>接納／跳過</th><th>跳過交易淨利</th><th>日均筆數</th><th>每5交易日</th></tr>
+<tr><td>原 OOS，377日</td><td>1口</td><td>812／199</td><td>＋36,693</td><td>2.15</td><td>10.77</td></tr>
+<tr><td>原 OOS，377日</td><td>2口</td><td>977／34</td><td>＋7,728</td><td>2.59</td><td>12.96</td></tr>
+<tr><td>二考，25日</td><td>1口</td><td>80／14</td><td>＋2,678</td><td>3.20</td><td>16.00</td></tr>
+<tr><td>二考，25日</td><td>2口</td><td>93／1</td><td>−3,073</td><td>3.72</td><td>18.60</td></tr>
+</table></div>
+<p>跳過淨利為正代表錯失獲利，負數代表避開虧損。二考2口唯一跳過的是 FOTT.2 的 −$3,073 交易；因此限倉後淨利高於六支直接相加。</p>
+<p>口徑：沿用凍結逐筆與 C4/C5，每策略1 NQ、每方向獨立限倉；slice20 同時訊號仍採最後順位，尚非確認的實際槽位。未套用實盤累計熔斷，MDD不含浮虧。二考截至 10/16；FOTT.2 二考的 Bento／混源標註仍有待釐清。</p>
 <h2>六＋一策略（2026-11-17，策4 p4r96.slice20.1 已上架）</h2>
 <img src="assets/overlap/six_plus_one_cum_20261117.png?v=20261117d" alt="六策略→加入候選 p4r96.slice20.1 共用1口/2口損益比較">
 <img src="assets/overlap/six_plus_one_corr_20261117.png?v=20261117d" alt="六＋候選原OOS日淨損益 Pearson 相關性">
