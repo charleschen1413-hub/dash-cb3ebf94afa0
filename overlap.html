@@ -1,6 +1,27 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>重疊分析</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}.tblscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:8px 0 16px}.tblscroll table{margin:0;white-space:nowrap}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a>｜<a href="expect.html">四正式+三特例 期望值</a></div>
 <h1>重疊分析</h1>
+<h2>九策略（2026-11-22，七支加入 s27.1 策2、s27.3 策8）</h2>
+<img src="assets/overlap/nine_s27_cum_20261122.png?v=20261122a" alt="七策略 → 九策略：共用1口與2口損益比較">
+<img src="assets/overlap/nine_s27_corr_20261122.png?v=20261122a" alt="九策略原OOS日淨損益 Pearson 相關性">
+<p>已改成 <b>九支</b>：s27.1策2、slice20.1策4、P2B15策5、s27.3策8。下表兩列淺橘候選已移除，下架列維持深灰。</p>
+<p><b>新增兩支有歷史獲利貢獻，但回撤也增加。</b></p>
+<div class="tblscroll"><table><tr><th>期間／每方向上限</th><th>七支→九支淨利</th><th>增量</th><th>日結MDD變化</th></tr>
+<tr><td>OOS／1口</td><td>$281,510→$339,899</td><td><b>+$58,389</b></td><td>$12,856→$14,500</td></tr>
+<tr><td>OOS／2口</td><td>$318,681→$470,236</td><td><b>+$151,555</b></td><td>$17,433→$18,458</td></tr>
+<tr><td>二考／1口</td><td>$24,327→$33,395</td><td><b>+$9,068</b></td><td>$4,258→$4,812</td></tr>
+<tr><td>二考／2口</td><td>$34,239→$48,400</td><td><b>+$14,161</b></td><td>$2,530→$3,189</td></tr>
+</table></div>
+<p>兩支s27原始日損益相關係數 <b>0.253</b>；全組最高是B1.04與P2B15的 <b>0.279</b>。這段樣本沒有高度重複，但仍存在同方向持倉競爭。</p>
+<div class="tblscroll"><table><tr><th>九支組合</th><th>接納／跳過</th><th>跳過交易淨利<sup>1</sup></th><th>日均／每5交易日</th></tr>
+<tr><td>OOS／1口</td><td>1,112／384</td><td>+$160,993</td><td>2.95／14.75筆</td></tr>
+<tr><td>OOS／2口</td><td>1,413／83</td><td>+$30,656</td><td>3.75／18.74筆</td></tr>
+<tr><td>二考／1口</td><td>100／31</td><td>+$14,122</td><td>4.00／20.00筆</td></tr>
+<tr><td>二考／2口</td><td>125／6</td><td>−$883</td><td>5.00／25.00筆</td></tr>
+</table></div>
+<p><sup>1</sup> 正值代表放棄獲利；負值代表避免虧損。</p>
+<p><b>2口較能保留新增訊號的效益。</b> OOS兩支新策略接納後貢獻$152,092，舊七支貢獻僅減少$537，淨增$151,555。</p>
+<p>這是凍結逐筆接納模擬，未套實盤保險絲，回撤不含浮虧；二考沿用既有帳，FOTT.2的Bento／混源標註仍待釐清。</p>
 <h2>七策略（2026-11-20，六支加入 P2B15_S019.01）</h2>
 <img src="assets/overlap/six_plus_p2b15_cum_20261120.png?v=20261120b" alt="六策略 → 加入 P2B15_S019.01：七策略">
 <img src="assets/overlap/seven_p2b15_corr_20261120.png?v=20261120b" alt="七策略原OOS日淨損益 Pearson 相關性（加入 P2B15_S019.01）">
