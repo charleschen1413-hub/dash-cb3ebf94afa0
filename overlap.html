@@ -1,6 +1,27 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>重疊分析</title><style>body{font-family:system-ui;max-width:1100px;margin:24px auto;padding:0 16px;color:#17374d;line-height:1.6}img{max-width:100%;display:block;margin:14px 0}table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin:8px 0 16px}.tblscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:8px 0 16px}.tblscroll table{margin:0;white-space:nowrap}th,td{border:1px solid #becddb;padding:6px 10px;text-align:right}th{background:#17374d;color:#fff}td:first-child{text-align:left}.nav a{color:#1a6fc4}h3{margin-top:22px}</style>
 <div class="nav"><a href="index.html">盤後儀表板</a>｜<a href="v33_top3.html">NQ 英雄榜</a>｜<a href="overlap.html">重疊分析</a>｜<a href="rookies.html">潛力新秀</a>｜<a href="expect.html">四正式+三特例 期望值</a></div>
 <h1>重疊分析</h1>
+<h2>九策略（2026-11-27，新增策9 p4r96.S34.1；策8 s27.3 維持下架）</h2>
+<img src="assets/overlap/nine_cum_20261127.png?v=20261127a" alt="八策略→新增策9 p4r96.S34.1 損益比較">
+<img src="assets/overlap/nine_corr_20261127.png?v=20261127a" alt="九策略 Pearson 相關性（新增 S34.1，策8 維持下架）">
+<p>已加入策9 p4r96.S34.1，恢復九支；策8 s27.3維持下架。</p>
+<p>這次新增效益主要出現在共用2口；共用1口時，大部分S34訊號被擋掉。</p>
+<div class="tblscroll"><table><tr><th>期間／每方向上限</th><th>八支→九支淨利</th><th>增量</th><th>日結MDD變化</th></tr>
+<tr><td>OOS／1口</td><td>$299,742→$302,424</td><td>+$2,682</td><td>$12,431→$12,431</td></tr>
+<tr><td>OOS／2口</td><td>$380,485→$410,146</td><td>+$29,661</td><td>$17,729→$17,367</td></tr>
+<tr><td>二考／1口</td><td>$32,319→$32,831</td><td>+$512</td><td>$4,746→$4,746</td></tr>
+<tr><td>二考／2口</td><td>$47,317→$49,774</td><td>+$2,457</td><td>$3,870→$3,303</td></tr>
+</table></div>
+<p>S34與策3 evo4x.slice01.1 的原始日損益相關係數為 0.553，2口後仍有 0.516，是這組最需要注意的重疊。</p>
+<p>OOS共用1口時，S34被跳過103筆，其中70筆被evo4x同方向持倉擋住。因此1口後相關係數降低，不能解讀成兩支變得獨立。</p>
+<div class="tblscroll"><table><tr><th>期間／上限</th><th>S34接納／跳過</th><th>九支總接納／跳過</th><th>九支日均／週均¹</th></tr>
+<tr><td>OOS／1口</td><td>29／103</td><td>967／414</td><td>2.56／12.82筆</td></tr>
+<tr><td>OOS／2口</td><td>106／26</td><td>1,288／93</td><td>3.42／17.08筆</td></tr>
+<tr><td>二考／1口</td><td>1／10</td><td>93／32</td><td>3.72／18.60筆</td></tr>
+<tr><td>二考／2口</td><td>8／3</td><td>117／8</td><td>4.68／23.40筆</td></tr>
+</table></div>
+<p>¹ 週均按5交易日，屬歷史頻率。</p>
+<p>S34榜單保留原OOS 144筆／$37,438；組合切齊377日後為 132筆／$39,264。模擬沿用凍結C4/C5逐筆，未套實盤保險絲，MDD不含浮虧；FOTT二考來源標註仍待釐清。</p>
 <h2>八策略（2026-11-25，策8 s27.3 觸發保險絲下架）</h2>
 <img src="assets/overlap/eight_cum_20261125.png?v=20261125a" alt="九策略→移除策8 損益比較">
 <img src="assets/overlap/eight_corr_20261125.png?v=20261125a" alt="八策略 Pearson 相關性">
